@@ -1,0 +1,130 @@
+
+<page name="main">
+
+<script>
+func exit_onClick_handle(){
+	set_property("legalMusicExit","up_image","res/icon_play_normal2.png")
+	set_property("legalMusicExit","down_image","res/icon_play_press2.png")
+	send_event("exit",aa)
+}
+
+var congratulationsInfo = "恭喜你"
+
+</script>
+
+<widgets name="screen" rect="0,0,480,480">
+	<button name="legalMusicExit" rect="409,0,72,72">
+		up_image="res/icon_under_normal.png",
+		down_image="res/icon_under_press.png",
+		<eventcbk event="onClick">exit_onClick_handle()</eventcbk>
+	</button>
+
+	<text name="congratulations"  rect="192,55,96,45">
+		fontType="PingFangRegular" 
+		textSize="32" 
+		textAlign="center" 
+		textColor="0xFFA522" 
+		textAlpha="0xFF"
+		transparentBKFlag="1" 
+		textBKColor="0x00000000" 
+		underlineFlag="0"
+		text=congratulationsInfo
+	</text>	
+	
+	<text name="useRightInfo" text="免费获取在线音乐    使用权" rect="115,102,249,28">
+		fontType="PingFangRegular" 
+		textSize="20" 
+		textAlign="left" 
+		textColor="0xEAEAEA" 
+		textAlpha="0xFF"
+		transparentBKFlag="1" 
+		textBKColor="0x00000000" 
+		underlineFlag="0"
+	</text>	
+	
+	<text name="useRightTime" text="1年" rect="275,102,29,28">
+		fontType="PingFangRegular" 
+		textSize="20" 
+		textAlign="center" 
+		textColor="0x000010" 
+		textAlpha="0xFF"
+		transparentBKFlag="1" 
+		textBKColor="0x00000000" 
+		underlineFlag="0"
+	</text>	
+	
+	<text name="activation" text="激活后获得以下特权" rect="140,172,200,28">
+		fontType="PingFangRegular" 
+		textSize="20" 
+		textAlign="center" 
+		textColor="0x757575"
+		textAlpha="0xFF"		
+		transparentBKFlag="1" 
+		textBKColor="0x00000000" 
+		underlineFlag="0"
+	</text>	
+	
+	<img name="legalMusicLibrary" rect="56,224,82,82">
+		path="res/res_mixpad/01_home/home_weather_sunny.png"
+	</img>	
+	
+	<text name="legalMusicLibraryTip" text="正版曲库" rect="57,324,80,28">
+		fontType="PingFangRegular" 
+		textSize="20" 
+		textAlign="center" 
+		textColor="0xEAEAEA" 
+		textAlpha="0xFF"
+		transparentBKFlag="1" 
+		textBKColor="0x00000000" 
+		underlineFlag="0"
+	</text>
+	
+	<img name="voiceControl" rect="193,224,82,82">
+		path="res/res_mixpad/01_home/home_weather_sunny.png"
+	</img>	
+	
+	<text name="voiceControlTip" text="语音控制" rect="194,324,80,28">
+		fontType="PingFangRegular" 
+		textSize="20" 
+		textAlign="center" 
+		textColor="0xEAEAEA" 
+		textAlpha="0xFF"
+		transparentBKFlag="1" 
+		textBKColor="0x00000000" 
+		underlineFlag="0"
+	</text>		
+
+	<img name="linkagePlay" rect="342,224,82,82">
+		path="res/res_mixpad/01_home/home_weather_sunny.png"
+	</img>	
+	
+	<text name="linkagePlayTip" text="联动播放" rect="194,324,80,28">
+		fontType="PingFangRegular" 
+		textSize="20" 
+		textAlign="center" 
+		textColor="0x979797"
+		textAlpha="0xFF"
+		transparentBKFlag="1" 
+		textBKColor="0x00000000" 
+		underlineFlag="0"
+	</text>	
+
+	<button name="activate" rect="23,392,434,66">
+		up_image="res/icon_under_normal.png",
+		down_image="res/icon_under_press.png",
+		<eventcbk event="onClick">activate_onClick_handle()</eventcbk>
+		<text name="activateTip" rect="141,13,153,40">
+			fontType="PingFangRegular" 
+			textSize="28" 
+			textAlign="center" 
+			textColor="0x000000"
+			textAlpha="0xFF"
+			transparentBKFlag="1" 
+			textBKColor="0x00000000" 
+			underlineFlag="0"
+			text="免费激活" 
+		</text>		 
+	</button>
+</widgets>
+
+</page>

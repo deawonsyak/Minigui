@@ -1,0 +1,26 @@
+xml文件说明
+
+标签
+	root   			根标签 文件起始标签
+	include  		包含其他xml文件， 用于模板的加载， 可以把共用模板写入单独的xml文件
+	mode				模板
+		定义模板。 模板中的标签和控件标签同名.
+		模板用于创建一组显示格式相同的控件。 
+		在page标签中 用imode标签引用模板。
+		模板的构建可以传入参数，用于构建不同的实体。
+		模板参数为JSON格式。
+		
+	ordergroup	指令组， 指令的集合。 用于执行一系列指令
+	page				页面标签
+	icard			控件聚合卡片，可在多页面共享使用
+	recvevent		页面事件处理标签， 描述事件处理方式
+	
+控件标签
+	imode			用于加载mode。 根据mode属性查找mode。value值是json结构数据
+		mode依据value的json来构建控件
+	box
+	img
+		eventcbk	控件事件处理标签	描述控件事件处理方式
+	
+	
+	

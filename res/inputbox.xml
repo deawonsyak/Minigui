@@ -1,0 +1,19 @@
+<page name="main">
+
+<include file="keyboard.xml"/>
+
+<widgets name="screen" rect="0,0,480,480">
+	<script>
+	func click_handle(){
+		Print("input click")
+	}
+	</script>
+    <image name="inputbg" rect="0,0,480,220" image="res/home_bg_1.png">
+	<inputbox name="input" rect="30,30,200,50" tipsText="input" text="abcdefghijklmnopqrstuvwxyz" tipsTextSize="40" textSize="40" border="Simple">
+	<eventcbk event="onClick">click_handle()</eventcbk>
+	</inputbox>
+    </image>
+	<keyboard name="keyboard" rect="0,205,480,275"/>
+</widgets>
+
+</page>

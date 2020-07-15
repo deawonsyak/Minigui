@@ -1,0 +1,92 @@
+gpattern.o: gpattern.c \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/stdc-predef.h \
+ gpattern.h gtypes.h glibconfig.h ../mgdconfig.h gmacros.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/lib/gcc/aarch64-buildroot-linux-gnu/6.5.0/include/stddef.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/lib/gcc/aarch64-buildroot-linux-gnu/6.5.0/include-fixed/limits.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/lib/gcc/aarch64-buildroot-linux-gnu/6.5.0/include-fixed/syslimits.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/limits.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/libc-header-start.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/features.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/sys/cdefs.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/wordsize.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/long-double.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/gnu/stubs.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/gnu/stubs-lp64.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/posix1_lim.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/local_lim.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/linux/limits.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/posix2_lim.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/lib/gcc/aarch64-buildroot-linux-gnu/6.5.0/include/float.h \
+ gmessages.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/lib/gcc/aarch64-buildroot-linux-gnu/6.5.0/include/stdarg.h \
+ gmem.h gunicode.h gerror.h gquark.h gutils.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/string.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/locale_t.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/__locale_t.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/strings.h
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/stdc-predef.h:
+
+gpattern.h:
+
+gtypes.h:
+
+glibconfig.h:
+
+../mgdconfig.h:
+
+gmacros.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/lib/gcc/aarch64-buildroot-linux-gnu/6.5.0/include/stddef.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/lib/gcc/aarch64-buildroot-linux-gnu/6.5.0/include-fixed/limits.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/lib/gcc/aarch64-buildroot-linux-gnu/6.5.0/include-fixed/syslimits.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/limits.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/libc-header-start.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/features.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/sys/cdefs.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/wordsize.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/long-double.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/gnu/stubs.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/gnu/stubs-lp64.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/posix1_lim.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/local_lim.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/linux/limits.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/posix2_lim.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/lib/gcc/aarch64-buildroot-linux-gnu/6.5.0/include/float.h:
+
+gmessages.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/lib/gcc/aarch64-buildroot-linux-gnu/6.5.0/include/stdarg.h:
+
+gmem.h:
+
+gunicode.h:
+
+gerror.h:
+
+gquark.h:
+
+gutils.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/string.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/locale_t.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/__locale_t.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/strings.h:

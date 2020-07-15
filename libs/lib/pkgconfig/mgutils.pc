@@ -1,0 +1,12 @@
+prefix=/home/yangkai/mixpad_minigui_app/lib_src/mgutils/../..//libs
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: mGUtils
+Description: A MiniGUI component which contains miscellaneous utilities like ColorSelectionDialogBox, FileOpenDialogBox, and so on.
+Version: 1.2.0
+Requires:
+Libs: -L${libdir} -lmgutils  -L/home/yangkai/mixpad_minigui_app/lib_src/minigui/../..//libs/lib -lminigui_ths -lpthread -ldrm -ljpeg -lpng -lm -lts -lfreetype -lpthread
+Libs.private:
+Cflags: -I${includedir} 

@@ -1,0 +1,61 @@
+
+<page name="main">
+
+<script>
+
+var onlineMusicOverdueInfo = "在线音乐服务已到期"
+var onlineMusicOverdueDate = "2017-01-01到期"
+var OnlineMusicRenewTip = "温馨提醒:可在”智家365 App“，进入”我的“点击”MixPad“，选择”音乐“续费。"
+
+</script>
+
+<widgets name="screen" rect="0,0,480,480">
+	<button name="onlineMusicOverdueExit" rect="409,0,72,72">
+		up_image="res/icon_under_normal.png",
+		down_image="res/icon_under_press.png",
+		<eventcbk event="onClick">exit_onClick_handle()</eventcbk>
+	</button>
+
+	<text name="onlineMusicOverdueInfo"  rect="99,55,288,45">
+		fontType="PingFangRegular" 
+		textSize="32" 
+		textAlign="center" 
+		textColor="0xEAEAEA" 
+		textAlpha="0xFF"
+		transparentBKFlag="1" 
+		textBKColor="0x00000000" 
+		underlineFlag="0"
+		text=onlineMusicOverdueInfo
+	</text>	
+	
+	<text name="onlineMusicOverdueDate" rect="158,100,167,32">
+		fontType="PingFangRegular" 
+		textSize="23" 
+		textAlign="left" 
+		textColor="0xEAEAEA" 
+		textAlpha="0xFF"
+		transparentBKFlag="1" 
+		textBKColor="0x00000000" 
+		underlineFlag="0"
+		text=onlineMusicOverdueDate
+	</text>	
+	
+	<img name="onlineMusicOverdueBmp" rect="56,224,82,82">
+		path="res/res_mixpad/01_home/home_weather_sunny.png"
+	</img>	
+	
+	<text name="OnlineMusicRenewTip" rect="16,388,449,64">
+		fontType="PingFangRegular" 
+		textSize="22" 
+		textAlign="center" 
+		textColor="0xEAEAEA" 
+		textAlpha="0xFF"
+		transparentBKFlag="1" 
+		textBKColor="0x00000000" 
+		underlineFlag="0"
+		text=OnlineMusicRenewTip
+	</text>
+	
+</widgets>
+
+</page>

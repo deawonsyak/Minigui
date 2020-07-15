@@ -1,0 +1,200 @@
+
+<page name="main">
+
+<script>
+
+var localMusic ="本地音乐"
+var favoriteMusic="我喜欢"
+var popMusic="流行"
+var classicMusic="经典"
+var childrenMusic="儿歌"
+var rockMusic="摇滚"
+var hiphopMusic="嘻哈"
+var jazzMusic="爵士"
+var absoluteMusic="纯音乐" 
+
+func exit_onClick_handle(){
+	set_property("play","up_image","res/icon_play_normal2.png")
+	set_property("play","down_image","res/icon_play_press2.png")
+	send_event("exit",aa)
+}
+
+onlineMusicsetting_onClick_handle(){
+	set_property("play","up_image","res/icon_play_normal2.png")
+	set_property("play","down_image","res/icon_play_press2.png")
+	send_event("onlineMusicSetting",aa)
+}
+
+</script>
+
+<widgets name="screen" rect="0,0,480,480">
+	<button name="musicSelectTypeExit" rect="409,0,72,72">
+		up_image="res/icon_under_normal.png",
+		down_image="res/icon_under_press.png",
+		<eventcbk event="onClick">exit_onClick_handle()</eventcbk>
+	</button>
+	
+	<button name="localMusic" rect="0,72,160,136">
+		<eventcbk event="onClick">localMusic_onClick_handle()</eventcbk>
+		<img name="localMusicImg" rect="57,30,45,37">
+			path="res/res_mixpad/01_home/home_weather_sunny.png"
+		</img>	
+		<text name="localMusicName" rect="36,87,88,23">
+			fontType="PingFangRegular" 
+			textSize="22" 
+			textAlign="left" 
+			textColor="0xEAEAEA" 
+			textAlpha="0xFF"
+			transparentBKFlag="1" 
+			textBKColor="0x00000000" 
+			underlineFlag="0"
+			text=localMusic
+		</text>	
+	</button>
+	
+	<button name="favoriteMusic" rect="160,72,160,136">
+		<eventcbk event="onClick">favoriteMusic_onClick_handle()</eventcbk>
+		<img name="favoriteMusicImg" rect="57,30,45,37">
+			path="res/res_mixpad/01_home/home_weather_sunny.png"
+		</img>	
+		<text name="favoriteMusicName" rect="36,87,88,23">
+			fontType="PingFangRegular" 
+			textSize="22" 
+			textAlign="left" 
+			textColor="0xEAEAEA" 
+			textAlpha="0xFF"
+			transparentBKFlag="1" 
+			textBKColor="0x00000000" 
+			underlineFlag="0"
+			text=favoriteMusic
+		</text>	
+	</button>	
+	
+	<button name="popMusic" rect="320,72,160,136">
+		<eventcbk event="onClick">popMusic_onClick_handle()</eventcbk>
+		<img name="popMusicImg" rect="57,30,45,37">
+			path="res/res_mixpad/01_home/home_weather_sunny.png"
+		</img>	
+		<text name="popMusicName" rect="36,87,88,23">
+			fontType="PingFangRegular" 
+			textSize="22" 
+			textAlign="left" 
+			textColor="0xEAEAEA" 
+			textAlpha="0xFF"
+			transparentBKFlag="1" 
+			textBKColor="0x00000000" 
+			underlineFlag="0"
+			text=popMusic
+		</text>	
+	</button>
+
+	<button name="classicMusic" rect="0,207,160,136">
+		<eventcbk event="onClick">classicMusic_onClick_handle()</eventcbk>
+		<img name="classicMusicImg" rect="57,30,45,37">
+			path="res/res_mixpad/01_home/home_weather_sunny.png"
+		</img>	
+		<text name="classicMusicName" rect="36,87,88,23">
+			fontType="PingFangRegular" 
+			textSize="22" 
+			textAlign="left" 
+			textColor="0xEAEAEA" 
+			textAlpha="0xFF"
+			transparentBKFlag="1" 
+			textBKColor="0x00000000" 
+			underlineFlag="0"
+			text=classicMusic
+		</text>	
+	</button>	
+	
+	<button name="childrenMusic" rect="160,207,160,136">
+		<eventcbk event="onClick">childrenMusic_onClick_handle()</eventcbk>
+		<img name="childrenMusicImg" rect="57,30,45,37">
+			path="res/res_mixpad/01_home/home_weather_sunny.png"
+		</img>	
+		<text name="childrenMusicName" rect="36,87,88,23">
+			fontType="PingFangRegular" 
+			textSize="22" 
+			textAlign="left" 
+			textColor="0xEAEAEA" 
+			textAlpha="0xFF"
+			transparentBKFlag="1" 
+			textBKColor="0x00000000" 
+			underlineFlag="0"
+			text=childrenMusic
+		</text>	
+	</button>
+
+	<button name="rockMusic" rect="320,207,160,136">
+		<eventcbk event="onClick">rockMusic_onClick_handle()</eventcbk>
+		<img name="rockMusicImg" rect="57,30,45,37">
+			path="res/res_mixpad/01_home/home_weather_sunny.png"
+		</img>	
+		<text name="rockMusicName" rect="36,87,88,23">
+			fontType="PingFangRegular" 
+			textSize="22" 
+			textAlign="left" 
+			textColor="0xEAEAEA" 
+			textAlpha="0xFF"
+			transparentBKFlag="1" 
+			textBKColor="0x00000000" 
+			underlineFlag="0"
+			text=rockMusic
+		</text>	
+	</button>		
+	<button name="hiphopMusic" rect="0,344,160,136">
+		<eventcbk event="onClick">hiphopMusic_onClick_handle()</eventcbk>
+		<img name="hiphopMusicImg" rect="57,30,45,37">
+			path="res/res_mixpad/01_home/home_weather_sunny.png"
+		</img>	
+		<text name="hiphopMusicName" rect="36,87,88,23">
+			fontType="PingFangRegular" 
+			textSize="22" 
+			textAlign="left" 
+			textColor="0xEAEAEA" 
+			textAlpha="0xFF"
+			transparentBKFlag="1" 
+			textBKColor="0x00000000" 
+			underlineFlag="0"
+			text=hiphopMusic
+		</text>	
+	</button>	
+	
+	<button name="jazzMusic" rect="160,344,160,136">
+		<eventcbk event="onClick">jazzMusic_onClick_handle()</eventcbk>
+		<img name="jazzMusicImg" rect="57,30,45,37">
+			path="res/res_mixpad/01_home/home_weather_sunny.png"
+		</img>	
+		<text name="childrenMusicName" rect="36,87,88,23">
+			fontType="PingFangRegular" 
+			textSize="22" 
+			textAlign="left" 
+			textColor="0xEAEAEA" 
+			textAlpha="0xFF"
+			transparentBKFlag="1" 
+			textBKColor="0x00000000" 
+			underlineFlag="0"
+			text=jazzMusic
+		</text>	
+	</button>
+
+	<button name="absoluteMusic" rect="320,344,160,136">
+		<eventcbk event="onClick">absoluteMusic_onClick_handle()</eventcbk>
+		<img name="rockMusicImg" rect="57,30,45,37">
+			path="res/res_mixpad/01_home/home_weather_sunny.png"
+		</img>	
+		<text name="absoluteMusicName" rect="36,87,88,23">
+			fontType="PingFangRegular" 
+			textSize="22" 
+			textAlign="left" 
+			textColor="0xEAEAEA" 
+			textAlpha="0xFF"
+			transparentBKFlag="1" 
+			textBKColor="0x00000000" 
+			underlineFlag="0"
+			text=absoluteMusic
+		</text>	
+	</button>		
+
+</widgets>
+
+</page>

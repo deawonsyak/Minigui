@@ -1,0 +1,86 @@
+Version 2.2.0 (2012-08-15)
+=======================================
+08/15 Migrate to MiniGUI 3.0.
+
+Version 2.0.2 (2007-09-24)
+=======================================
+09/24 fix a bug for image on big endian system.
+	* fix the image decoder for big endian system.(src/image.c)
+
+Version 2.0.1 (2007-09-10)
+=======================================
+09/14 fix a bug for radio button tabstop.
+	* fix the radio button tabstop.(src/emspider.c)
+
+09/10 add a function about control tabstop.
+    * add scroll view function for control tabstop. (src/emspider.c)
+    * set focus on mSpider control window. (simple/emspider_example.c)
+
+09/06 remove resource file.
+    * remove resource header file. (src/resource.h)
+    * remove resource header file. (src/emspider-res.h)
+	* add a new API mspider_bw_get_hwnd. (src/emspider_init.c)
+
+
+Version 2.0.0 (2007-06-19)
+=======================================
+06/19 Fix bug of https.
+    * change idle priority (src/io/https.c src/io/DBIO.c)
+
+Version 1.6.0 (2006-01-03 ~ 2006-02-28)
+=======================================
+01/19. Fix bug of javascript.
+    * Release the timer.(src/js/window.c)
+
+01/17. Fix bug of iframe and frameset.
+    * force reload from network.(src/nav.c)
+
+01/08. Call js_put_interpreter before calling js_get_interpreter.
+	* Html_tag_open_frameset, Html_set_dwpage (src/html.c)
+
+01/08. Call js_put_interpreter when destroy a mSpiderDoc object.
+	* a_Doc_destroy (src/doc.c).
+
+01/05. Enhance DwStyleFont to include the charset info.
+	* a_Dw_style_font_new, a_Dw_style_font_new (src/dw_style.c)
+
+01/05. Enhance Html_new to handle the content-type and charset.
+	* src/html.c
+	* src/mgwidget.c
+
+01/05. Fix bug of Dw_style_font_equal
+	* src/dw_style.c
+	* Forget the comparision of charset.
+
+01/04. Fix bug of set_doc_bgcolor in JS.
+	* src/js/document.c.
+	* Do not operate the color directly.
+
+01/04. Fix bug of a_Dw_page_add_text.
+	* src/dw_page.c.
+	* We should split the text into words.
+
+01/04. Fix bug of Dw_page_draw_line.
+	* src/dw_page.c.
+	* Do not change the ascent of a line.
+	* TODO fix bug of the margins of iFrame object.
+
+01/04. Use the topmost stack peroperties to init the background color of a
+MiniGUI widget (Dw_MgWidget_set_color).
+	* src/mgwidget.c.
+
+Version 1.2.0 (2005-05-31 ~ 2005-12-31)
+=======================================
+
+Version 0.4.0 (2005-05-31 ~ 2005-06-30)
+=======================================
+
+06/19: Basic image and networking code.
+
+06/15: Fix bug of text layout.
+	* src/dw_page.c (a_dw_Page_add_word).
+
+06/15: Fix bug of abort.
+	* Reset last_entered when remove the viewport (src/dw_viewport.c).
+
+

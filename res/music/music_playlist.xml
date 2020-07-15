@@ -1,0 +1,64 @@
+
+<page name="main">
+
+<script>
+var musicName="告别气球"
+var musicAuther="- 周杰伦"
+
+func exit_onClick_handle(){
+	set_property("play","up_image","res/icon_play_normal2.png")
+	set_property("play","down_image","res/icon_play_press2.png")
+	send_event("exit",aa)
+}
+
+</script>
+
+<widgets name="screen" rect="0,0,480,480">
+	<button name="playListExit" rect="409,0,72,72">
+		up_image="res/icon_under_normal.png",
+		down_image="res/icon_under_press.png",
+		<eventcbk event="onClick">exit_onClick_handle()</eventcbk>
+	</button>
+	<slide name="musicPlaylist" rect="0,72,480,408">
+		<box name="musicPlaylist_01" rect="0,72,480,80">
+			<img name="musicPlayStatus" rect="10,40,24,24">
+				path="res/res_mixpad/01_home/home_weather_sunny.png"
+			</img>	
+			<text name="musicName" rect="10,184,112,34">
+				fontType="PingFangRegular" 
+				textSize="28" 
+				textAlign="left" 
+				textColor="0xEAEAEA" 
+				textAlpha="0xFF"
+				transparentBKFlag="1" 
+				textBKColor="0x00000000" 
+				underlineFlag="0"
+				text=musicName
+			</text>	
+			<text name="musicName" rect="10,184,112,34">
+				fontType="PingFangRegular" 
+				textSize="28" 
+				textAlign="left" 
+				textColor="0xEAEAEA" 
+				textAlpha="0xFF"
+				transparentBKFlag="1" 
+				textBKColor="0x00000000" 
+				underlineFlag="0"
+				text=musicName
+			</text>		
+			<text name="musicAuther" rect="10,184,112,34">
+				fontType="PingFangRegular" 
+				textSize="22" 
+				textAlign="left" 
+				textColor="0xEAEAEA" 
+				textAlpha="0x88"
+				transparentBKFlag="1" 
+				textBKColor="0x00000000" 
+				underlineFlag="0"
+				text=musicAuther
+			</text>				
+		</box>
+	<slide>
+</widgets>
+
+</page>

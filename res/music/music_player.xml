@@ -1,0 +1,122 @@
+
+<page name="main">
+
+<script>
+func musicPrev_onClick_handle(){
+	set_property("musicPrev","up_image","res/icon_play_normal2.png")
+	set_property("musicPrev","down_image","res/icon_play_press2.png")
+	send_event("music_prev",aa)
+}
+
+func musicPlay_onClick_handle(){
+	set_property("musicPlay","up_image","res/icon_play_normal2.png")
+	set_property("musicPlay","down_image","res/icon_play_press2.png")
+	send_event("music_play",aa)
+}
+
+func musicNext_onClick_handle(){
+	set_property("musicNext","up_image","res/icon_play_normal2.png")
+	set_property("musicNext","down_image","res/icon_play_press2.png")
+	send_event("music_prev",aa)
+}
+
+func musicCollect_onClick_handle(){
+	set_property("musicCollect","up_image","res/icon_play_normal2.png")
+	set_property("musicCollect","down_image","res/icon_play_press2.png")
+	send_event("music_collect",aa)
+}
+
+func musicLoop_onClick_handle(){
+	set_property("musicLoop","up_image","res/icon_play_normal2.png")
+	set_property("musicLoop","down_image","res/icon_play_press2.png")
+	send_event("music_loop",aa)
+}
+
+func musicList_onClick_handle(){
+	set_property("musicLoop","up_image","res/icon_play_normal2.png")
+	set_property("musicLoop","down_image","res/icon_play_press2.png")
+	send_event("music_loop",aa)
+}
+
+func musicSetting_onClick_handle(){
+	set_property("musicSetting","up_image","res/icon_play_normal2.png")
+	set_property("musicSetting","down_image","res/icon_play_press2.png")
+	send_event("music_setting",aa)
+}
+
+
+</script>
+
+<widgets name="musicPlayerScreen" rect="0,0,480,480">
+	<box name="musicPlayerAlbum" rect="41,41,66,66">
+		<img name="musicPlayerAlbumBmp" rect="0,0,66,66">
+			path="res/res_mixpad/01_home/home_weather_sunny.png"
+		</img>
+	</box>
+	<text name="musicName"  rect="129,32,350,45">
+		fontType="PingFangRegular" 
+		textSize="32" 
+		textAlign="left" 
+		textColor="0xE4E4E4" 
+		textAlpha="0xFF"
+		transparentBKFlag="1" 
+		textBKColor="0x00000000" 
+		underlineFlag="0"
+		text=onlineMusicOverdueInfo
+	</text>	
+	<text name="musicAuthor"  rect="129,83,350,45">
+		fontType="PingFangRegular" 
+		textSize="23" 
+		textAlign="left" 
+		textColor="0xEAEAEA" 
+		textAlpha="0x66"
+		transparentBKFlag="1" 
+		textBKColor="0x00000000" 
+		underlineFlag="0"
+		text=onlineMusicOverdueInfo
+	</text>
+	<button name="musicPrev" rect="28,158,125,125">
+		up_image="res/icon_under_normal.png",
+		down_image="res/icon_under_press.png",
+		<eventcbk event="onClick">musicPrev_onClick_handle()</eventcbk>
+	</button>
+	
+	<button name="musicPlay" rect="165,146,150,150">
+		up_image="res/icon_under_normal.png",
+		down_image="res/icon_under_press.png",
+		<eventcbk event="onClick">musicPlay_onClick_handle()</eventcbk>
+	</button>
+	
+	<button name="musicNext" rect="327,158,125,125">
+		up_image="res/icon_under_normal.png",
+		down_image="res/icon_under_press.png",
+		<eventcbk event="onClick">musicNext_onClick_handle()</eventcbk>
+	</button>
+
+	<button name="musicCollect" rect="50,322,47,47">
+		up_image="res/icon_under_normal.png",
+		down_image="res/icon_under_press.png",
+		<eventcbk event="onClick">musicCollect_onClick_handle()</eventcbk>
+	</button>
+	
+	<button name="musicLoop" rect="161,322,47,47">
+		up_image="res/icon_under_normal.png",
+		down_image="res/icon_under_press.png",
+		<eventcbk event="onClick">musicLoop_onClick_handle()</eventcbk>
+	</button>
+	
+	<button name="musicList" rect="272,322,47,47">
+		up_image="res/icon_under_normal.png",
+		down_image="res/icon_under_press.png",
+		<eventcbk event="onClick">musicList_onClick_handle()</eventcbk>
+	</button>
+	
+	<button name="musicSetting" rect="383,322,47,47">
+		up_image="res/icon_under_normal.png",
+		down_image="res/icon_under_press.png",
+		<eventcbk event="onClick">musicSetting_onClick_handle()</eventcbk>
+	</button>
+	
+</widgets>
+
+</page>

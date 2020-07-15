@@ -1,0 +1,127 @@
+<!--
+--   This file is part of mGNCS, a component for MiniGUI.
+-- 
+--   Copyright (C) 2008~2018, Beijing FMSoft Technologies Co., Ltd.
+-- 
+--   This program is free software: you can redistribute it and/or modify
+--   it under the terms of the GNU General Public License as published by
+--   the Free Software Foundation, either version 3 of the License, or
+--   (at your option) any later version.
+-- 
+--   This program is distributed in the hope that it will be useful,
+--   but WITHOUT ANY WARRANTY; without even the implied warranty of
+--   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+--   GNU General Public License for more details.
+-- 
+--   You should have received a copy of the GNU General Public License
+--   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-- 
+--   Or,
+-- 
+--   As this program is a library, any link to this program must follow
+--   GNU General Public License version 3 (GPLv3). If you cannot accept
+--   GPLv3, you need to be licensed from FMSoft.
+-- 
+--   If you have got a commercial license of this program, please use it
+--   under the terms and conditions of the commercial license.
+-- 
+--   For more information about the commercial license, please refer to
+--   <http://www.minigui.com/blog/minigui-licensing-policy/>.
+  -->
+<res-ids>
+	<res-id>
+		<id  value="0x22711"/>
+		<type>2</type>
+		<source></source>
+	</res-id>
+	<res-id>
+		<id  value="0x22712"/>
+		<type>2</type>
+		<source></source>
+	</res-id>
+	<res-id>
+		<id  value="0x2400a"/>
+		<type>2</type>
+		<source></source>
+	</res-id>
+	<res-id>
+		<id  value="0x2463a"/>
+		<type>2</type>
+		<source></source>
+	</res-id>
+	<res-id>
+		<id  value="0x248bb"/>
+		<type>2</type>
+		<source></source>
+	</res-id>
+	<res-id>
+		<id  value="0x249aa"/>
+		<type>2</type>
+		<source></source>
+	</res-id>
+	<res-id>
+		<id  value="0x249ab"/>
+		<type>2</type>
+		<source></source>
+	</res-id>
+	<res-id>
+		<id  value="0x24ada"/>
+		<type>2</type>
+		<source></source>
+	</res-id>
+	<res-id>
+		<id  value="0x25a7c"/>
+		<type>2</type>
+		<source></source>
+	</res-id>
+	<res-id>
+		<id  value="0x26060"/>
+		<type>2</type>
+		<source></source>
+	</res-id>
+	<res-id>
+		<id  value="0x26061"/>
+		<type>2</type>
+		<source></source>
+	</res-id>
+	<res-id>
+		<id  value="0x26668"/>
+		<type>2</type>
+		<source></source>
+	</res-id>
+	<res-id>
+		<id  value="0x26b9c"/>
+		<type>2</type>
+		<source></source>
+	</res-id>
+	<res-id>
+		<id  value="0x2718a"/>
+		<type>2</type>
+		<source></source>
+	</res-id>
+	<res-id>
+		<id  value="0x28857"/>
+		<type>2</type>
+		<source></source>
+	</res-id>
+	<res-id>
+		<id  value="0x2a633"/>
+		<type>2</type>
+		<source></source>
+	</res-id>
+	<res-id>
+		<id  value="0x2a634"/>
+		<type>2</type>
+		<source></source>
+	</res-id>
+	<res-id>
+		<id  value="0x2b38c"/>
+		<type>2</type>
+		<source></source>
+	</res-id>
+	<res-id>
+		<id  value="0x2b64b"/>
+		<type>2</type>
+		<source></source>
+	</res-id>
+</res-ids>

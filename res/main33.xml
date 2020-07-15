@@ -1,0 +1,90 @@
+
+<page name="main">
+
+<script>
+
+</script>
+
+<widgets name="screen" rect="0,0,480,480">
+	<box name="commonInfo" rect="0,0,480,480">
+	<img name="airQualityBmp" rect="30,34,28,28">
+		path="res/res_mixpad/01_home/home_clock_2.png"
+	</img>	
+	<text name="airQualityValue" text="优" rect="73,34,80,28">
+		fontTypeType="PingFangRegular" 
+		textSize="20" 
+		textAlign="left" 
+		textColor="0xE4E4E4"
+		textAlpha="0xFF"
+		transparentBKFlag="enable" 
+		textBKColor="0xFFffff" 
+		underlineFlagFlag="disable"
+	</text>	
+	
+	<img name="ultravioletRaysBmp" rect="30,76,28,28">
+		path="res/res_mixpad/01_home/home_clock_2.png"
+	</img>	
+	<text name="ultravioletRaysValue" text="紫外线强" rect="73,76,80,28">
+		fontTypeType="PingFangRegular" 
+		textSize="20" 
+		textAlign="left" 
+		textColor="0xE4E4E4"
+		textAlpha="0xFF"
+		transparentBKFlag="enable" 
+		textBKColor="0x000000" 
+		underlineFlagFlag="disable"
+	</text>	
+	
+	<img name="washCarBmp" rect="30,117,28,28">
+		path="res/res_mixpad/01_home/home_clock_2.png"
+	</img>	
+	<text name="washCarBmpValue" text="不宜洗车" rect="73,117,80,28">
+		fontTypeType="PingFangRegular" 
+		textSize="20" 
+		textAlign="left" 
+		textColor="0xE4E4E4"
+		textAlpha="0xFF" 
+		transparentBKFlag="enable" 
+		textBKColor="0x000000" 
+		underlineFlagFlag="disable"
+	</text>		
+	
+	
+	<img name="weatherSunny" rect="245,25,234,315">
+		path="res/res_mixpad/01_home/home_weather_sunny.png"
+	</img>	
+	
+	<text name="tmpAir" text="32°" rect="34,323,264,125">
+		fontTypeType="PingFangRegular" 
+		textSize="110" 
+		textAlign="left" 
+		textColor="0xE4E4E4"
+		textAlpha="0xFF"
+		transparentBKFlag="enable" 
+		textBKColor="0x000000" 
+		underlineFlagFlag="disable"
+	</text>
+	<text name="weatherInfo" text="晴" rect="190,375,42,59">
+		fontTypeType="PingFangRegular" 
+		textSize="40" 
+		textAlign="center" 
+		textColor="0xE4E4E4"
+		textAlpha="0xFF"
+		transparentBKFlag="enable" 
+		textBKColor="0x000000" 
+		underlineFlagFlag="disable"
+	</text>			
+	<text name="position" text="深圳市" rect="407,408,48,22">
+		fontTypeType="PingFangRegular" 
+		textSize="16" 
+		textAlign="left" 
+		textColor="0xE4E4E4"
+		textAlpha="0xFF"
+		transparentBKFlag="enable" 
+		textBKColor="0x000000" 
+		underlineFlagFlag="disable"
+	</text>	
+	</box>
+</widgets>
+
+</page>

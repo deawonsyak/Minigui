@@ -1,0 +1,120 @@
+memstat (1.0) unstable; urgency=low
+
+  * Updated copyright statement
+  * Automatically scan subdirectories.
+  * Use standard scanf option.
+  * Added "-n" option to prevent searching for filenames.
+  * Added "-v" option to display version information.
+  * Bumped Standards-Version to 3.9.4, no changes needed.
+  * Moved to debhelper 9 to get hardening automatically.
+
+ -- Michael Meskes <meskes@debian.org>  Sun, 10 Nov 2013 15:02:49 +0100
+
+memstat (0.9) unstable; urgency=low
+
+  * Set errno to 0 before running strtol so the check afterwards works,
+    closes: #611181
+  * Bumped Standards-Version to 3.9.1, no changes needed.
+  * Added source/format file.
+
+ -- Michael Meskes <meskes@debian.org>  Mon, 31 Jan 2011 12:03:33 +0100
+
+memstat (0.8) unstable; urgency=low
+
+  * Fixed handling of dev attribute. The old version failed to work under some
+    circumstances, closes: #531757
+  * Re-added output of PIDs that was somehow lost, closes: #531682
+
+ -- Michael Meskes <meskes@debian.org>  Mon, 08 Jun 2009 14:15:57 +0200
+
+memstat (0.7) unstable; urgency=low
+
+  * If a process is stopped while processing, memstat no longer stops, but
+    instead prints out an error and continues working, closes: #531435
+
+ -- Michael Meskes <meskes@debian.org>  Tue, 02 Jun 2009 15:13:00 +0200
+
+memstat (0.6) unstable; urgency=low
+
+  * Corrected path in reference to memstat-tutorial.txt.gz, closes: #502844
+  * Made program read name of executable instead of guessing it from the memory
+    information, closes: #503026
+  * Added option to only show information for one process.
+  * Do not list memory mapping devices, closes: #47260, #58290, #108510
+  * List all other device mappings, closes: #496778
+  * Count double mapped pages twice, closes: #496777
+  * Completely redid the whole calculation part.
+  * Bumped Standards-Version to 3.8.1, no changes needed.
+
+ -- Michael Meskes <meskes@debian.org>  Mon, 06 Apr 2009 16:11:19 +0200
+
+memstat (0.5) unstable; urgency=low
+
+  * New maintainer, closes: #485998
+  * Aknowledged NMU, closes: #322749
+  * Fixed compiler warnings by applying patch, closes: #356024
+  * Fixed wrong pathname problem by applying patch, closes: #294635, #279117
+  * Bumped Standards-Version to 3.8.0.
+  * Bumped debhelper compat version to 7.
+  * Simplified rules file.
+
+ -- Michael Meskes <meskes@debian.org>  Fri, 13 Jun 2008 16:54:39 +0200
+
+memstat (0.4.0.0.1) unstable; urgency=low
+
+  * Non-maintainer upload (take two.. where did the first one go?)
+  * Complete /usr/doc transition. Closes: #322749
+
+ -- Joey Hess <joeyh@debian.org>  Tue, 10 Jan 2006 01:28:34 -0500
+
+memstat (0.4) unstable; urgency=high
+
+  * make fscanf buffer bigger and more dynamic (Closes: Bug#5544)
+  * less verbose postinst (Closes: Bug#97400)
+
+ -- Bernd Eckenfels <ecki@debian.org>  Fri, 12 Jul 2002 05:37:51 +0200
+
+memstat (0.3) unstable; urgency=low
+
+  * catch null pointer in reallof (Closes Bug: #108767)
+  * new policy version (3.5.6) and use of strip/debug switches
+  * includes Build-Depends now
+  * lintian clean (added Priority, fixed spelling, added -isp)
+
+ -- Bernd Eckenfels <ecki@debian.org>  Thu, 23 May 2002 04:26:51 +0200
+
+memstat (0.2) unstable; urgency=low
+
+  * support for path in maps files (#23099, #31043, #49855, #50700, #22674)
+  * added libc5 compat dirs (#34326)
+  * started to maintain the package upstream
+  * no compiler warnings and lintian clean (support for /usr/share)
+  * new standards version
+
+ -- Bernd Eckenfels <ecki@debian.org>  Sat, 20 Nov 1999 18:40:23 +0100
+
+memstat (0.1-3) unstable; urgency=low
+
+  * removed double /usr/local/bin in conffile (Bug#22674)
+  * moved man page to section 1 and meminfo -> memstat (Bug#23096)
+  * added debian/conffiles to .deb archives control dir (Bug#27818)
+
+ -- Bernd Eckenfels <ecki@debian.org>  Sun,  1 Nov 1998 09:08:05 +0100
+
+memstat (0.1-2) unstable; urgency=low
+
+  * modified manpage to show new 'unknown' format and fix Bug#21360
+
+ -- Bernd Eckenfels <ecki@debian.org>  Sat, 18 Apr 1998 21:58:23 +0200
+
+
+memstat (0.1-1) unstable; urgency=low
+
+  * changed the output from unknown files to "[<dev>]:<inode>"
+  * Initial Release
+
+ -- Bernd Eckenfels <ecki@debian.org>  Mon,  6 Apr 1998 22:56:41 +0200
+
+Local variables:
+mode: debian-changelog
+End:

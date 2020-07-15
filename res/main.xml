@@ -1,0 +1,162 @@
+
+<page name="main">
+
+<script>
+var time="07:59"
+var date="12月12日 周二"
+var tmp="32°"
+var livingroomlight="客厅灯"
+var lightopen="开"
+var porchlight="玄关灯"
+var lightclose="关"
+var bb
+var livingroomlightstatus=0
+var porchlightstatus=0
+
+func livingroomlight_onClick_handle(){
+	Print("mywidget onTest0")
+	if (livingroomlightstatus == 0){
+		set_property("living_room_light","image","res/res_mixpad/01_home/icon_home_light_open.png")
+		set_property("living_room_light_status","text",lightopen)
+		livingroomlightstatus=1
+	}else{
+		set_property("living_room_light","image","res/res_mixpad/01_home/icon_home_light_close.png")
+		set_property("living_room_light_status","text",lightclose)
+		livingroomlightstatus=0
+	}
+	set_property("living_room_light_ctrl","upImage","res/res_mixpad/01_home/card_bg.png")
+	set_property("living_room_light_ctrl","downImage","res/res_mixpad/01_home/card_bg.png")
+	set_property("play0","upImage","res/res_mixpad/01_home/icon_home_light_close.png")
+	set_property("play0","downImage","res/res_mixpad/01_home/icon_home_light_open.png")
+	send_service_event("livingRoomLight",livingroomlightstatus)
+}
+
+func porchlight_onClick_handle(){
+	Print("mywidget onTest1")
+	if (porchlightstatus == 0){
+		set_property("porch_light","image","res/res_mixpad/01_home/icon_home_light_open.png")
+		set_property("porch_light_status","text",lightopen)
+		porchlightstatus=1
+	}else{
+		set_property("porch_light","image","res/res_mixpad/01_home/icon_home_light_close.png")
+		set_property("porch_light_status","text",lightclose)
+		porchlightstatus=0
+	}
+	set_property("porch_light_ctrl","upImage","res/res_mixpad/01_home/card_bg.png")
+	set_property("porch_light_ctrl","downImage","res/res_mixpad/01_home/card_bg.png")
+	set_property("play1","upImage","res/res_mixpad/01_home/icon_home_light_close.png")
+	set_property("play1","downImage","res/res_mixpad/01_home/icon_home_light_open.png")
+	send_service_event("porchLight",porchlightstatus)
+}
+
+</script>
+
+
+<card name="livingRoomLight" rect="0,0,215,120">
+	<button name="living_room_light_ctrl" rect="0,0,215,120">
+		upImage="res/res_mixpad/01_home/card_bg.png",
+		downImage="res/res_mixpad/01_home/card_bg.png",
+		<eventcbk event="onClick">livingroomlight_onClick_handle()</eventcbk>
+	</button>
+
+	<image name="living_room_light" rect="20,28,64,64">
+		image="res/res_mixpad/01_home/icon_home_light.png"
+	</image>	
+	<text name="living_room_light_name" rect="96,30,72,33">
+		fontType="PingFangRegular"
+		textSize="24"
+		textAlign="left" 
+		textColor="0xFFFFFF" 
+		text=livingroomlight
+	</text>	
+	<text name="living_room_light_status" rect="96,63,32,25">
+		fontType="PingFangRegular"
+		textSize="18"
+		textAlign="left" 
+		textColor="0xFFFFFF"
+		textAlpha="0x66"		
+		text=lightclose
+	</text>		
+</card>
+
+
+<card name="porchLight" rect="0,0,215,120">
+	<button name="porch_light_ctrl" rect="0,0,215,120">
+		upImage="res/res_mixpad/01_home/card_bg.png",
+		downImage="res/res_mixpad/01_home/card_bg.png",
+		<eventcbk event="onClick">porchlight_onClick_handle()</eventcbk>
+	</button>
+	<image name="porch_light" rect="20,28,64,64">
+		image="res/res_mixpad/01_home/icon_home_light.png"
+	</image>	
+	<text name="porch_light_name" rect="96,30,72,33">
+		fontType="PingFangRegular"
+		textSize="24"
+		textAlign="left" 
+		textColor="0xFFFFFF" 
+		text=porchlight
+	</text>	
+	<text name="porch_light_status" rect="96,63,32,25">
+		fontType="PingFangRegular"
+		textSize="18"
+		textAlign="left" 
+		textColor="0xFFFFFF"
+		textAlpha="0x66"		
+		text=lightclose
+	</text>		
+</card>
+
+
+<widgets name="firstScreenDefault" rect="0,0,480,480">
+	<box name="firstScreenDefaultBox" rect="0,0,480,480">
+	<image name="firstScreenDefaultBg" rect="0,0,480,480">
+		image="res/res_mixpad/01_home/home_bg_1.png"
+	</image>	
+	
+	<text name="firstScreenDefaultTime" rect="20,40,301,120">
+		fontType="robotoregular"
+		textSize="120"
+		textAlign="center" 
+		textColor="0xFFFFFF" 
+		text=time
+	</text>
+	
+	<text name="firstScreenDefaultDate" rect="30,168,180,37">
+		fontType="PingFangRegular"
+		textSize="26"
+		textAlign="left" 
+		textColor="0xFFFFFF" 
+		text=date
+	</text>
+	
+	<image name="firstScreenDefaultWeather" rect="340,50,132,110">
+		image="res/res_mixpad/01_home/icon_weather_sunny day132x110.png"
+	</image>	
+	
+	
+	<text name="firstScreenDefaultTemp" rect="380,168,56,36">
+		fontType="PingFangRegular"
+		textSize="32"
+		textAlign="left" 
+		textColor="0xFFFFFF" 
+		text=tmp
+	</text>	
+	
+	<button name="play0" rect="-60,-60,60,60">
+		upImage="res/icon_play_normal2.png",
+		downImage="res/icon_play_press2.png",
+		<eventcbk event="onClick">livingroomlight_onClick_handle()</eventcbk>
+	</button>	
+	
+	<button name="play1" rect="-120,-60,60,60">
+		upImage="res/icon_play_normal2.png",
+		downImage="res/icon_play_press2.png",
+		<eventcbk event="onClick">porchlight_onClick_handle()</eventcbk>
+	</button>	
+	
+	<icard name="livingRoomLightCard" card="livingRoomLight" rect="20,317,215,120"></icard>
+	<icard name="porchLightCard" card="porchLight" rect="245,317,215,120"></icard>
+	</box>
+</widgets>
+
+</page>

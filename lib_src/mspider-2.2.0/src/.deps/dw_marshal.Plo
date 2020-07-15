@@ -1,0 +1,195 @@
+dw_marshal.lo: dw_marshal.c \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/stdc-predef.h \
+ dw_marshal.h ../glib/glib.h ../glib/galloca.h ../glib/gtypes.h \
+ ../glib/glibconfig.h ../mgdconfig.h ../glib/gmacros.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/lib/gcc/aarch64-buildroot-linux-gnu/6.5.0/include/stddef.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/lib/gcc/aarch64-buildroot-linux-gnu/6.5.0/include-fixed/limits.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/lib/gcc/aarch64-buildroot-linux-gnu/6.5.0/include-fixed/syslimits.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/limits.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/libc-header-start.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/features.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/sys/cdefs.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/wordsize.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/long-double.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/gnu/stubs.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/gnu/stubs-lp64.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/posix1_lim.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/local_lim.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/linux/limits.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/posix2_lim.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/lib/gcc/aarch64-buildroot-linux-gnu/6.5.0/include/float.h \
+ ../glib/garray.h ../glib/gasyncqueue.h ../glib/gthread.h \
+ ../glib/gerror.h ../glib/gquark.h ../glib/gbacktrace.h ../glib/gcache.h \
+ ../glib/glist.h ../glib/gmem.h ../glib/gcompletion.h ../glib/gdataset.h \
+ ../glib/gdate.h ../glib/gfileutils.h ../glib/ghash.h ../glib/ghook.h \
+ ../glib/giochannel.h ../glib/gconvert.h ../glib/gmain.h ../glib/gslist.h \
+ ../glib/gstring.h ../glib/gunicode.h ../glib/gmarkup.h \
+ ../glib/gmessages.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/lib/gcc/aarch64-buildroot-linux-gnu/6.5.0/include/stdarg.h \
+ ../glib/gnode.h ../glib/gpattern.h ../glib/gprimes.h ../glib/gqsort.h \
+ ../glib/gqueue.h ../glib/grand.h ../glib/grel.h ../glib/gscanner.h \
+ ../glib/gshell.h ../glib/gstrfuncs.h ../glib/gthreadpool.h \
+ ../glib/gtimer.h ../glib/gtree.h ../glib/gutils.h ../glib/glib-object.h \
+ ../glib/gboxed.h ../glib/gtype.h ../glib/glib.h ../glib/genums.h \
+ ../glib/gobject.h ../glib/gvalue.h ../glib/gparam.h ../glib/gclosure.h \
+ ../glib/gsignal.h ../glib/gmarshal.h ../glib/gparamspecs.h \
+ ../glib/gsourceclosure.h ../glib/gtypemodule.h ../glib/gtypeplugin.h \
+ ../glib/gvaluearray.h ../glib/gvaluetypes.h
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/stdc-predef.h:
+
+dw_marshal.h:
+
+../glib/glib.h:
+
+../glib/galloca.h:
+
+../glib/gtypes.h:
+
+../glib/glibconfig.h:
+
+../mgdconfig.h:
+
+../glib/gmacros.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/lib/gcc/aarch64-buildroot-linux-gnu/6.5.0/include/stddef.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/lib/gcc/aarch64-buildroot-linux-gnu/6.5.0/include-fixed/limits.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/lib/gcc/aarch64-buildroot-linux-gnu/6.5.0/include-fixed/syslimits.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/limits.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/libc-header-start.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/features.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/sys/cdefs.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/wordsize.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/long-double.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/gnu/stubs.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/gnu/stubs-lp64.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/posix1_lim.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/local_lim.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/linux/limits.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/posix2_lim.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/lib/gcc/aarch64-buildroot-linux-gnu/6.5.0/include/float.h:
+
+../glib/garray.h:
+
+../glib/gasyncqueue.h:
+
+../glib/gthread.h:
+
+../glib/gerror.h:
+
+../glib/gquark.h:
+
+../glib/gbacktrace.h:
+
+../glib/gcache.h:
+
+../glib/glist.h:
+
+../glib/gmem.h:
+
+../glib/gcompletion.h:
+
+../glib/gdataset.h:
+
+../glib/gdate.h:
+
+../glib/gfileutils.h:
+
+../glib/ghash.h:
+
+../glib/ghook.h:
+
+../glib/giochannel.h:
+
+../glib/gconvert.h:
+
+../glib/gmain.h:
+
+../glib/gslist.h:
+
+../glib/gstring.h:
+
+../glib/gunicode.h:
+
+../glib/gmarkup.h:
+
+../glib/gmessages.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/lib/gcc/aarch64-buildroot-linux-gnu/6.5.0/include/stdarg.h:
+
+../glib/gnode.h:
+
+../glib/gpattern.h:
+
+../glib/gprimes.h:
+
+../glib/gqsort.h:
+
+../glib/gqueue.h:
+
+../glib/grand.h:
+
+../glib/grel.h:
+
+../glib/gscanner.h:
+
+../glib/gshell.h:
+
+../glib/gstrfuncs.h:
+
+../glib/gthreadpool.h:
+
+../glib/gtimer.h:
+
+../glib/gtree.h:
+
+../glib/gutils.h:
+
+../glib/glib-object.h:
+
+../glib/gboxed.h:
+
+../glib/gtype.h:
+
+../glib/glib.h:
+
+../glib/genums.h:
+
+../glib/gobject.h:
+
+../glib/gvalue.h:
+
+../glib/gparam.h:
+
+../glib/gclosure.h:
+
+../glib/gsignal.h:
+
+../glib/gmarshal.h:
+
+../glib/gparamspecs.h:
+
+../glib/gsourceclosure.h:
+
+../glib/gtypemodule.h:
+
+../glib/gtypeplugin.h:
+
+../glib/gvaluearray.h:
+
+../glib/gvaluetypes.h:

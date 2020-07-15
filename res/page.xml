@@ -1,0 +1,45 @@
+<page name="test">
+
+<include>mode.xml</include>
+	
+<mode name="mode1">
+	<mnode widget="slide">
+		<mnode widget="img" name="img1" x="0" y="0" w="100" h="50" path="img1.jpg"></mnode>
+		<img name="img2" x="150" y="0" w="100" h="50" path="img2.jpg"></img>
+		<img name="img2" x="150" y="0" w="100" h="50" >
+			path="path"
+			<img></img>
+		</img>
+	</slide>
+</mode>
+
+<card name="module1">
+	<img name="mimg1" x="0" y="10" w="100" h="100" path="img1.jpg"/>
+	<text name="text1" x="0" y="10" w="100" h="100" >module</text>
+</card>
+
+
+<ordergroup name="ordergroup1">
+	<order>set_property("img1","x",10)</order>
+</ordergroup>
+
+
+<widgets>	
+	<box name="main">
+		<img name="bkimg" >
+			x=0, y=0, w=200, h=200
+		</img>
+		<imode mode="mode1">{"img2":"img2.jpg"}</imode>
+		<button name="button1" x="0" y="0" w="100" h="20" onclick="run_ordergroup(ordergroup1)"></button>
+		<button name="button2" x="0" y="0" w="100" h="20" onclick="run_ordergroup(ordergroup1)">
+			<eventcbk event="onclick">run_ordergroup("ordergroup1")</eventcbk>
+			<eventcbk event="onbuttonup">set_property("button2","x",2)</eventcbk>
+		</button>
+		
+		<icard name="hh"></icard>
+	</box>
+	
+	<recvevent event="add_mode">run_ordergroup("ordergroup1")</recvevent>
+</widgets>
+	
+</page>

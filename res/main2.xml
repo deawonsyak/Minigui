@@ -1,0 +1,329 @@
+
+<page name="main">
+
+<script>
+
+var bb
+
+func next_onClick_handle(){
+	set_property("play","up_image","res/icon_play_normal2.png")
+	set_property("play","down_image","res/icon_play_press2.png")
+	
+}
+
+var mainbg = "res/home_bg_1.png"
+
+var time = "14:59"
+var dateWeek = "6月28日 星期天"
+var outsideTem = "30℃"
+var airQuality = "优"
+var insideTem = "27℃"
+var humitidy = "75%"
+var homeTip = "试试”你好小欧下一曲”"
+var homeClockTwoDate="Mar 12"
+var ultravioletRays = "紫外线强"
+var washCar = "不宜洗车"
+var temAir = "30°"
+var weatherInfo = "晴"
+var position = "深圳市"
+</script>
+
+<card name="card1" rect="0,0,100,100">
+	<button name="card1_play" rect="20,20,60,60">
+		up_image="res/icon_play_normal2.png",
+		down_image="res/icon_play_press2.png",
+		<eventcbk event="onClick">
+			set_property("card1_play","up_image","res/icon_stop_normal2.png")
+			set_property("card1_play","down_image","res/icon_stop_press2.png")
+		</eventcbk>
+	</button>
+</card>
+
+<widgets name="screen" rect="0,0,480,480">
+	<slidescreen name="homeSlideScreen" rect="0,0,480,480" moveDir="1" gap="0" adsorbPoint="1,0,0">
+		<box name="commonInfo" rect="0,0,480,480">
+			<image name="commonInfoBK" rect="0,0,480,480">
+				image="res/res_mixpad/01_home/home_common_bg.png"
+				<text name="hometime" rect="72,100,336,107">
+					fontType="robotoregular"
+					textSize="107"
+					textAlign="center" 
+					textColor="0xEAEAEA" 
+					textAlpha="0xFF"
+					transparentBK="enable" 
+					textBKColor="0x00000000"
+					underline="disable"
+					text=time
+				</text>
+				<text name="homedate"  rect="123,229,234,40">
+					fontType="PingFangRegular"
+					textSize="28" 
+					textAlign="center" 
+					textColor="0xFFE4E4E4" 
+					transparentBK="enable" 
+					textBKColor="0x00000000" 
+					underline="disable"
+					text=dateWeek
+				</text>
+				<image name="timeSelectOneBk" rect="53,336,40,33">
+					image="res/res_mixpad/01_home/home_bg.png"
+				</image>
+				<text name="outsideTem"  rect="50,391,47,26">
+					fontType="PingFangRegular"
+					textSize="20" 
+					textAlign="center" 
+					textColor="0xEAEAEA" 
+					textAlpha="0xFF"
+					transparentBK="enable" 
+					textBKColor="0x00000000" 
+					underline="disable"
+					text=outsideTem
+				</text>	
+				<image name="timeSelectOneBk" rect="164,336,40,28">
+					image="res/res_mixpad/01_home/home_bg.png"
+				</image>	
+				<text name="airQuality" rect="163,391,47,26">
+					fontType="PingFangRegular"
+					textSize="20" 
+					textAlign="center" 
+					textColor="0xEAEAEA" 
+					textAlpha="0xFF"
+					transparentBK="enable" 
+					textBKColor="0x00000000" 
+					underline="disable"
+					 text=airQuality
+				</text>	
+				<image name="timeSelectOneBk" rect="277,335,37,37">
+					image="res/res_mixpad/01_home/home_bg.png"
+				</image>	
+				<text name="insideTem" rect="272,391,47,26">
+					fontType="PingFangRegular"
+					textSize="20" 
+					textAlign="center" 
+					textColor="0xEAEAEA" 
+					textAlpha="0xFF"
+					transparentBK="enable" 
+					textBKColor="0x00000000" 
+					underline="disable"
+					text=insideTem
+				</text>	
+				<image name="timeSelectOneBk" rect="394,334,25,37">
+					image="res/res_mixpad/01_home/home_bg.png"
+				</image>		
+				<text name="humitidy"  rect="383,391,47,26">
+					fontType="PingFangRegular"
+					textSize="20" 
+					textAlign="center" 
+					textColor="0xEAEAEA" 
+					textAlpha="0xFF"
+					transparentBK="enable" 
+					textBKColor="0x00000000" 
+					underline="disable"
+					text=humitidy
+				</text>	
+			</image>
+		</box>
+		<box name="timeSelectOne" rect="0,0,480,480">
+			<image name="timeSelectOneBK" rect="0,0,480,480">
+				image="res/res_mixpad/01_home/home_bg.png"
+				<text name="hometime" rect="47,75,336,107">
+					fontType="robotoregular"
+					textSize="107"
+					textAlign="center" 
+					textColor="0xEAEAEA" 
+					textAlpha="0xFF"
+					transparentBK="enable" 
+					textBKColor="0x00000000"
+					underline="disable"
+					text=time
+				</text>
+				<text name="homedate" rect="47,200,210,40">
+					fontType="PingFangRegular"
+					textSize="28" 
+					textAlign="center" 
+					textColor="0xFFE4E4E4" 
+					transparentBK="enable" 
+					textBKColor="0x00000000" 
+					underline="disable"
+					text=dateWeek
+				</text>
+				<text name="homeTip" rect="47,397,311,40">
+					fontType="PingFangRegular" 
+					textSize="28" 
+					textAlign="left" 
+					textColor="0xFFE4E4E4" 
+					transparentBK="enable" 
+					textBKColor="0x00000000" 
+					underline="disable"
+					text=homeTip
+				</text>
+			</image>
+		</box>
+		<box name="homeClockTwo" rect="0,0,480,480">
+			<image name="homeClockTwoBK" rect="0,0,480,480">
+				image="res/res_mixpad/01_home/home_common_bg.png"
+				<image name="homeClockTwoClock" rect="40,40,400,400">
+					image="res/res_mixpad/01_home/home_clock_2.png"
+				</image>	
+				<text name="homeClockTwoDate"  rect="202,293,80,33">
+					fontType="PingFangRegular" 
+					textSize="24" 
+					textAlign="left" 
+					textColor="0xFF3C3D59" 
+					transparentBK="enable" 
+					textBKColor="0x00000000" 
+					underline="disable"
+					text=homeClockTwoDate
+				</text>
+				<image name="homeClockTwoHour" rect="153,237,76,6">
+					image="res/res_mixpad/01_home/home_clock_2_hour.png"
+				</image>	
+				<image name="homeClockTwoMinute" rect="229,237,140,6">
+					image="res/res_mixpad/01_home/home_clock_2_minute.png"
+				</image>	
+				<image name="homeClockTwoSec" rect="229,238,180,4">
+					image="res/res_mixpad/01_home/home_clock_2_sec.png"
+				</image>							
+				<image name="homeClockTwoMid" rect="229,229,22,22">
+					image="res/res_mixpad/01_home/home_clock_2_mid.png"
+				</image>
+			</image>			
+		</box>		
+		<box name="homeClockThree" rect="0,0,480,480">
+			<image name="homeClockThreeBK" rect="0,0,480,480">
+				image="res/res_mixpad/01_home/home_common_bg.png"
+				<image name="homeClockThreeClock" rect="40,40,400,400">
+					image="res/res_mixpad/01_home/home_clock_3.png"
+				</image>	
+				<image name="homeClockThreeHour" rect="133,229,142,22">
+					image="res/res_mixpad/01_home/home_clock_3_hour.png"
+				</image>	
+				<image name="homeClockThreeMinute" rect="206,233,184,14">
+					image="res/res_mixpad/01_home/home_clock_3_minute.png"
+				</image>	
+				<image name="homeClockThrerSec" rect="220,238,180,4">
+					image="res/res_mixpad/01_home/home_clock_3_sec.png"
+				</image>							
+				<image name="homeClockThreeMid" rect="229,229,22,22">
+					image="res/res_mixpad/01_home/home_clock_3_mid.png"
+				</image>
+			</image>	
+		</box>
+		<box name="homeAir" rect="0,0,480,480">
+			<image name="homeAirBK" rect="0,0,480,480">
+				image="res/res_mixpad/01_home/home_common_bg.png"
+				<image name="airQualityBmp" rect="30,34,28,28">
+					image="res/res_mixpad/01_home/home_clock_2.png"
+				</image>	
+				<text name="airQualityValue" rect="73,34,80,28">
+					fontType="PingFangRegular" 
+					textSize="20" 
+					textAlign="left" 
+					textColor="0xE4E4E4"
+					textAlpha="0xFF"
+					transparentBK="enable" 
+					textBKColor="0x000000" 
+					underline="disable"
+					text=airQuality
+				</text>	
+				
+				<image name="ultravioletRaysBmp" rect="30,76,28,28">
+					image="res/res_mixpad/01_home/home_clock_2.png"
+				</image>	
+				<text name="ultravioletRaysValue"  rect="73,76,80,28">
+					fontType="PingFangRegular" 
+					textSize="20" 
+					textAlign="left" 
+					textColor="0xE4E4E4"
+					textAlpha="0xFF"
+					transparentBK="enable" 
+					textBKColor="0x000000" 
+					underline="disable"
+					text=ultravioletRays
+				</text>	
+				
+				<image name="washCarBmp" rect="30,117,28,28">
+					image="res/res_mixpad/01_home/home_clock_2.png"
+				</image>	
+				<text name="washCarBmpValue"  rect="73,117,80,28">
+					fontType="PingFangRegular" 
+					textSize="20" 
+					textAlign="left" 
+					textColor="0xE4E4E4"
+					textAlpha="0xFF" 
+					transparentBK="enable" 
+					textBKColor="0x000000" 
+					underline="disable"
+					text=washCar
+				</text>		
+				
+				
+				<image name="weatherSunny" rect="245,25,234,315">
+					image="res/res_mixpad/01_home/home_weather_sunny.png"
+				</image>	
+				
+				<text name="tmpAir" rect="34,323,264,125">
+					fontType="PingFangRegular" 
+					textSize="110" 
+					textAlign="left" 
+					textColor="0xE4E4E4"
+					textAlpha="0xFF"
+					transparentBK="enable" 
+					textBKColor="0x000000" 
+					underline="disable"
+					text=temAir
+				</text>
+				<text name="weatherInfo"  rect="190,375,42,59">
+					fontType="PingFangRegular" 
+					textSize="40" 
+					textAlign="center" 
+					textColor="0xE4E4E4"
+					textAlpha="0xFF"
+					transparentBK="enable" 
+					textBKColor="0x000000" 
+					underline="disable"
+					text=weatherInfo
+				</text>			
+				<text name="position"  rect="407,408,48,22">
+					fontType="PingFangRegular" 
+					textSize="16" 
+					textAlign="left" 
+					textColor="0xE4E4E4"
+					textAlpha="0xFF"
+					transparentBK="enable1" 
+					textBKColor="0x000000" 
+					underline="disable"
+					text=position
+				</text>				
+			</image>	
+		</box>		
+	</slidescreen>
+	<!--img name="mainbk" rect="0,0,480,480">
+		image=mainbg
+		<box name="musicbox" rect="20,317,440,120">
+		<rect name="musicrect" rect="0,0,440,120" bgColor="0x99252525">
+			<button name="prev" rect="236,30,60,60">
+				up_image="res/icon_on_normal.png",
+				down_image="res/icon_on_press.png",
+			</button>
+			<button name="play" rect="308,30,60,60">
+				up_image="res/icon_play_normal2.png",
+				down_image="res/icon_play_press2.png",
+				<eventcbk event="onClick">
+					set_property("play","up_image","res/icon_stop_normal2.png")
+					set_property("play","down_image","res/icon_stop_press2.png")
+				</eventcbk>
+			</button>
+			<button name="next" rect="380,30,60,60">
+				up_image="res/icon_under_normal.png",
+				down_image="res/icon_under_press.png",
+				<eventcbk event="onClick">next_onClick_handle()</eventcbk>
+			</button>
+		</rect>
+		</box>
+		<icard name="test" card="card1" rect="20,100,100,100"></icard>
+		<icard name="test1" card="card1" rect="200,100,100,100"></icard>
+	</image-->
+</widgets>
+
+</page>

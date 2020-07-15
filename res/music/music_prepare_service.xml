@@ -1,0 +1,67 @@
+
+<page name="main">
+
+<script>
+
+
+var prepareMusicService = "开通音乐服务"
+var onlinePrepareMusicService = "即将支持在线开通，敬请期待！"
+var prepareMusicServiceTip = "连接ORVIBO蓝牙音箱，即可免费获得1年试用权"
+
+func exit_onClick_handle(){
+	set_property("play","up_image","res/icon_play_normal2.png")
+	set_property("play","down_image","res/icon_play_press2.png")
+	send_event("exit",aa)
+}
+</script>
+
+<widgets name="screen" rect="0,0,480,480">
+	<button name="prepareMusicServiceExit" rect="409,0,72,72">
+		up_image="res/icon_under_normal.png",
+		down_image="res/icon_under_press.png",
+		<eventcbk event="onClick">exit_onClick_handle()</eventcbk>
+	</button>
+
+	<text name="prepareMusicService"  rect="144,55,192,45">
+		fontType="PingFangRegular" 
+		textSize="32" 
+		textAlign="center" 
+		textColor="0xE4E4E4" 
+		textAlpha="0xFF"
+		transparentBKFlag="1" 
+		textBKColor="0x00000000" 
+		underlineFlag="0"
+		text=prepareMusicService
+	</text>	
+	
+	<img name="onlineMusicOverdueBmp" rect="56,224,82,82">
+		path="res/res_mixpad/01_home/home_weather_sunny.png"
+	</img>	
+	
+	<text name="onlinePrepareMusicService" rect="81,373,318,32">
+		fontType="PingFangRegular" 
+		textSize="23" 
+		textAlign="center" 
+		textColor="0xEAEAEA" 
+		textAlpha="0xFF"
+		transparentBKFlag="1" 
+		textBKColor="0x00000000" 
+		underlineFlag="0"
+		text=onlinePrepareMusicService
+	</text>
+	
+	<text name="onlinePrepareMusicService" rect="16,411,449,32">
+		fontType="PingFangRegular" 
+		textSize="20" 
+		textAlign="center" 
+		textColor="0x757575" 
+		textAlpha="0xFF"
+		transparentBKFlag="1" 
+		textBKColor="0x00000000" 
+		underlineFlag="0"
+		text=onlinePrepareMusicService
+	</text>	
+	
+</widgets>
+
+</page>

@@ -1,0 +1,121 @@
+
+<page name="main">
+
+<script>
+
+var musicSettingsName = "音乐"
+var playerDisplaySettingInfo = "显示播放器"
+var playerDisplaySettingTip = "打开后，屏幕上将会显示音乐播放控制页。"
+var onlineMusicStatusInfo="在线音乐服务"
+var onlineMusicStatus="未开通/待激活"
+var connectBlueToothTip="连接蓝牙音箱，海量正版曲库无线畅听。"
+
+func exit_onClick_handle(){
+	set_property("play","up_image","res/icon_play_normal2.png")
+	set_property("play","down_image","res/icon_play_press2.png")
+	send_event("exit",aa)
+}
+
+onlineMusicsetting_onClick_handle(){
+	set_property("play","up_image","res/icon_play_normal2.png")
+	set_property("play","down_image","res/icon_play_press2.png")
+	send_event("onlineMusicSetting",aa)
+}
+
+</script>
+
+<widgets name="screen" rect="0,0,480,480">
+	<box name="musicSettingsTitle" rect="0,0,480,72">
+		<button name="musicSettingsExit" rect="0,0,72,72">
+			up_image="res/icon_under_normal.png",
+			down_image="res/icon_under_press.png",
+			<eventcbk event="onClick">exit_onClick_handle()</eventcbk>
+		</button>
+
+		<text name="musicSettingsName"  rect="72,19,314,34">
+			fontType="PingFangRegular" 
+			textSize="28" 
+			textAlign="left" 
+			textColor="0xEAEAEA" 
+			textAlpha="0xFF"
+			transparentBKFlag="1" 
+			textBKColor="0x00000000" 
+			underlineFlag="0"
+			text=musicSettingsName
+		</text>
+	</box>
+	
+	<text name="playerDisplaySettingInfo" rect="20,98,140,34">
+		fontType="PingFangRegular" 
+		textSize="28" 
+		textAlign="left" 
+		textColor="0xEAEAEA" 
+		textAlpha="0xFF"
+		transparentBKFlag="1" 
+		textBKColor="0x00000000" 
+		underlineFlag="0"
+		text=playerDisplaySettingInfo
+	</text>	
+	
+	<switch name="playerDisplaySetting" rect="390,99,70,32">
+		<eventcbk event="onClick">playerDisplay_onClick_handle()</eventcbk>
+	</switch>
+	
+	<text name="playerDisplaySettingTip" rect="20,184,355,24">
+		fontType="PingFangRegular" 
+		textSize="19" 
+		textAlign="left" 
+		textColor="0x747474" 
+		textAlpha="0xFF"
+		transparentBKFlag="1" 
+		textBKColor="0x00000000" 
+		underlineFlag="0"
+		text=playerDisplaySettingTip
+	</text>	
+	
+	
+	<text name="onlineMusicStatusInfo" rect="20,277,168,34">
+		fontType="PingFangRegular" 
+		textSize="28" 
+		textAlign="left" 
+		textColor="0xEAEAEA" 
+		textAlpha="0xFF"
+		transparentBKFlag="1" 
+		textBKColor="0x00000000" 
+		underlineFlag="0"
+		text=onlineMusicStatusInfo
+	</text>
+	
+	<text name="onlineMusicStatus" rect="267,279,165,31">
+		fontType="PingFangRegular" 
+		textSize="25" 
+		textAlign="left" 
+		textColor="0x9BA0AA" 
+		textAlpha="0xFF"
+		transparentBKFlag="1" 
+		textBKColor="0x00000000" 
+		underlineFlag="0"
+		text=onlineMusicStatus
+	</text>	
+	
+	<button name="onlineMusicStatusSetting" rect="438,284,19,19">
+		up_image="res/icon_under_normal.png",
+		down_image="res/icon_under_press.png",
+		<eventcbk event="onClick">onlineMusicsetting_onClick_handle()</eventcbk>
+	</button>
+
+	<text name="connectBlueToothTip" rect="20,363,336,24">
+		fontType="PingFangRegular" 
+		textSize="19" 
+		textAlign="left" 
+		textColor="0x747474" 
+		textAlpha="0xFF"
+		transparentBKFlag="1" 
+		textBKColor="0x00000000" 
+		underlineFlag="0"
+		text=connectBlueToothTip
+	</text>	
+
+</widgets>
+
+</page>

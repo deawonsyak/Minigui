@@ -1,0 +1,204 @@
+<include>
+
+
+<xmlwidget name="keyboard" rect="0,205,480,275">
+	<script>
+		var textColor="0xFFEAEAEA"
+		var kbbgColor="0xFF262626"
+		var spaceDownColor=kbbgColor
+		var spaceUpColor="0xFF363636"
+		var mainbg = "res/home_bg_1.png"
+		func key_down(key){
+			var t = get_property(key, "x")
+			Print(t)
+			set_property("popup", "x", t)	
+			t = get_property(key, "text")
+			set_property("popupText", "text", t)
+			t = get_property(key, "y")
+			set_property("popup", "y", t)
+			set_property("popup", "hide", "visible")
+		}
+
+		func key_up(key){
+			set_property("popup", "hide", "hidden")
+			send_keyboard_key(key)
+		}
+
+		func number_down(){
+
+		}
+		func number_up(){
+		}
+		func space_down(){
+		set_property("space", "color", "0xFF262626")
+		}
+		func space_up(){
+		set_property("space", "color", "0xFF363636")
+		}
+		func ok_down(){
+		}
+		func ok_up(){
+		}
+	</script>
+	<box name="keyboard" rect="0,0,480,275">
+		<rect name="keys" rect="0,55,480,220">
+			color=kbbgColor
+			<text name="q" rect="0,0,48,55" text="q" textSize="30" textAlign="center">
+				<eventcbk event="onButtonDown">key_down("q")</eventcbk>
+				<eventcbk event="onButtonUp">key_up("q")</eventcbk>
+				textColor=textColor
+			</text>
+			<text name="w" rect="48,0,48,55" text="w" textSize="30" textAlign="center">
+				textColor=textColor
+				<eventcbk event="onButtonDown">key_down("w")</eventcbk>
+				<eventcbk event="onButtonUp">key_up("w")</eventcbk>
+			</text>
+			<text name="e" rect="96,0,48,55" text="e" textSize="30" textAlign="center">
+				textColor=textColor
+				<eventcbk event="onButtonDown">key_down("e")</eventcbk>
+				<eventcbk event="onButtonUp">key_up("e")</eventcbk>
+			</text>
+			<text name="r" rect="144,0,48,55" text="r" textSize="30" textAlign="center">
+				textColor=textColor
+				<eventcbk event="onButtonDown">key_down("r")</eventcbk>
+				<eventcbk event="onButtonUp">key_up("r")</eventcbk>
+			</text>
+			<text name="t" rect="192,0,48,55" text="t" textSize="30" textAlign="center">
+				textColor=textColor
+				<eventcbk event="onButtonDown">key_down("t")</eventcbk>
+				<eventcbk event="onButtonUp">key_up("t")</eventcbk>
+			</text>
+			<text name="y" rect="240,0,48,55" text="y" textSize="30" textAlign="center">
+				textColor=textColor
+				<eventcbk event="onButtonDown">key_down("y")</eventcbk>
+				<eventcbk event="onButtonUp">key_up("y")</eventcbk>
+			</text>
+			<text name="u" rect="288,0,48,55" text="u" textSize="30" textAlign="center">
+				textColor=textColor
+				<eventcbk event="onButtonDown">key_down("u")</eventcbk>
+				<eventcbk event="onButtonUp">key_up("u")</eventcbk>
+			</text>
+			<text name="i" rect="336,0,48,55" text="i" textSize="30" textAlign="center">
+				textColor=textColor
+				<eventcbk event="onButtonDown">key_down("i")</eventcbk>
+				<eventcbk event="onButtonUp">key_up("i")</eventcbk>
+			</text>
+			<text name="o" rect="384,0,48,55" text="o" textSize="30" textAlign="center">
+				textColor=textColor
+				<eventcbk event="onButtonDown">key_down("o")</eventcbk>
+				<eventcbk event="onButtonUp">key_up("o")</eventcbk>
+			</text>
+			<text name="p" rect="432,0,48,55" text="p" textSize="30" textAlign="center">
+				textColor=textColor
+				<eventcbk event="onButtonDown">key_down("p")</eventcbk>
+				<eventcbk event="onButtonUp">key_up("p")</eventcbk>
+			</text>
+			<text name="a" rect="24,55,48,55" text="a" textSize="30" textAlign="center">
+				textColor=textColor
+				<eventcbk event="onButtonDown">key_down("a")</eventcbk>
+				<eventcbk event="onButtonUp">key_up("a")</eventcbk>
+			</text>
+			<text name="s" rect="72,55,48,55" text="s" textSize="30" textAlign="center">
+				textColor=textColor
+				<eventcbk event="onButtonDown">key_down("s")</eventcbk>
+				<eventcbk event="onButtonUp">key_up("s")</eventcbk>
+			</text>
+			<text name="d" rect="120,55,48,55" text="d" textSize="30" textAlign="center">
+				textColor=textColor
+				<eventcbk event="onButtonDown">key_down("d")</eventcbk>
+				<eventcbk event="onButtonUp">key_up("d")</eventcbk>
+			</text>
+			<text name="f" rect="168,55,48,55" text="f" textSize="30" textAlign="center">
+				textColor=textColor
+				<eventcbk event="onButtonDown">key_down("f")</eventcbk>
+				<eventcbk event="onButtonUp">key_up("f")</eventcbk>
+			</text>
+			<text name="g" rect="216,55,48,55" text="g" textSize="30" textAlign="center">
+				textColor=textColor
+				<eventcbk event="onButtonDown">key_down("g")</eventcbk>
+				<eventcbk event="onButtonUp">key_up("g")</eventcbk>
+			</text>
+			<text name="h" rect="264,55,48,55" text="h" textSize="30" textAlign="center">
+				textColor=textColor
+				<eventcbk event="onButtonDown">key_down("h")</eventcbk>
+				<eventcbk event="onButtonUp">key_up("h")</eventcbk>
+			</text>
+			<text name="j" rect="312,55,48,55" text="j" textSize="30" textAlign="center">
+				textColor=textColor
+				<eventcbk event="onButtonDown">key_down("j")</eventcbk>
+				<eventcbk event="onButtonUp">key_up("j")</eventcbk>
+			</text>
+			<text name="k" rect="360,55,48,55" text="k" textSize="30" textAlign="center">
+				textColor=textColor
+				<eventcbk event="onButtonDown">key_down("k")</eventcbk>
+				<eventcbk event="onButtonUp">key_up("k")</eventcbk>
+			</text>
+			<text name="l" rect="408,55,48,55" text="l" textSize="30" textAlign="center">
+				textColor=textColor
+				<eventcbk event="onButtonDown">key_down("l")</eventcbk>
+				<eventcbk event="onButtonUp">key_up("l")</eventcbk>
+			</text>
+			<text name="z" rect="72,110,48,55" text="z" textSize="30" textAlign="center">
+				textColor=textColor
+				<eventcbk event="onButtonDown">key_down("z")</eventcbk>
+				<eventcbk event="onButtonUp">key_up("z")</eventcbk>
+			</text>
+			<text name="x" rect="120,110,48,55" text="x" textSize="30" textAlign="center">
+				textColor=textColor
+				<eventcbk event="onButtonDown">key_down("x")</eventcbk>
+				<eventcbk event="onButtonUp">key_up("x")</eventcbk>
+			</text>
+			<text name="c" rect="168,110,48,55" text="c" textSize="30" textAlign="center">
+				textColor=textColor
+				<eventcbk event="onButtonDown">key_down("c")</eventcbk>
+				<eventcbk event="onButtonUp">key_up("c")</eventcbk>
+			</text>
+			<text name="v" rect="216,110,48,55" text="v" textSize="30" textAlign="center">
+				textColor=textColor
+				<eventcbk event="onButtonDown">key_down("v")</eventcbk>
+				<eventcbk event="onButtonUp">key_up("v")</eventcbk>
+			</text>
+			<text name="b" rect="264,110,48,55" text="b" textSize="30" textAlign="center">
+				textColor=textColor
+				<eventcbk event="onButtonDown">key_down("b")</eventcbk>
+				<eventcbk event="onButtonUp">key_up("b")</eventcbk>
+			</text>
+			<text name="n" rect="312,110,48,55" text="n" textSize="30" textAlign="center">
+				textColor=textColor
+				<eventcbk event="onButtonDown">key_down("n")</eventcbk>
+				<eventcbk event="onButtonUp">key_up("n")</eventcbk>
+			</text>
+			<text name="m" rect="360,110,48,55" text="m" textSize="30" textAlign="center">
+				textColor=textColor
+				<eventcbk event="onButtonDown">key_down("m")</eventcbk>
+				<eventcbk event="onButtonUp">key_up("m")</eventcbk>
+			</text>				
+			<text name="number" rect="0,165,100,55" text="?123" textSize="30" textAlign="center">
+				textColor=textColor
+				<eventcbk event="onButtonDown">number_down()</eventcbk>
+				<eventcbk event="onButtonUp">number_up()</eventcbk>
+			</text>
+			<rect name="space" rect="100,165,280,44">
+				color=spaceUpColor
+				<text name="tspace" rect="0,0,280,44" text="space" textSize="30" textAlign="center">
+					textColor=textColor					
+				</text>
+				<eventcbk event="onButtonDown">space_down()</eventcbk>
+				<eventcbk event="onButtonUp">space_up()</eventcbk>				
+			</rect>
+			<text name="OK" rect="380,165,100,55" text="确定" textSize="30" textAlign="center">
+				textColor="0xFF323232"
+				<eventcbk event="onButtonDown">ok_down()</eventcbk>
+				<eventcbk event="onButtonUp">ok_up()</eventcbk>
+			</text>
+		</rect>
+		<rect name="popup" rect="0,0,48,110" hide="hidden">
+			color=spaceUpColor
+			<text name="popupText" rect="0,0,48,55" text="" textSize="30" textAlign="center">
+				textColor=textColor
+			</text>
+		</rect>
+	</box>
+</xmlwidget>
+
+</include>

@@ -1,0 +1,25 @@
+<include>
+
+<xmlwidget name="mywidget" rect="0,0,100,100">
+	<script>
+		var b = "hello world"
+		func play_click(){
+			set_property("play","upImage","res/icon_stop_normal2.png")
+			set_property("play","downImage","res/icon_stop_press2.png")
+			trigger_widget_event("onTest0")
+			Print(b)
+		}
+	</script>
+
+	<eventDefine event="onTest0"/>
+	<image name="image1" rect="60,0,40,40" image="res/icon_stop_press2.png"></image>
+	<button name="play" rect="0,0,60,60">
+		upImage="res/icon_play_normal2.png",
+		downImage="res/icon_play_press2.png",
+		<eventcbk event="onClick">
+			play_click()
+		</eventcbk>
+	</button>
+</xmlwidget>
+
+</include>

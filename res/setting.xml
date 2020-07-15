@@ -1,0 +1,20 @@
+<page name="setting">
+
+<widgets name="widget_tree" rect="0,0,480,480">
+	<rect name="main" rect="0,0,480,480" bgColor="0xff000000">
+		<button name="close" rect="431,23,26,26" >
+			up_image="res/叉号.png"
+			down_image="res/叉号_press.png"
+			<eventcbk event="onClick">backup_page()</eventcbk>
+		</button>
+		<text name="tital" text="设置" rect="25,62,92,47">
+			textSize="40"
+			font="PingFangRegular"
+			textColor="0xffffffff"
+		</text>
+
+	</rect>
+
+</widgets>
+
+</page>

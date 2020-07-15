@@ -1,0 +1,389 @@
+gsignal.o: gsignal.c \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/stdc-predef.h \
+ glibconfig.h ../mgdconfig.h gmacros.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/lib/gcc/aarch64-buildroot-linux-gnu/6.5.0/include/stddef.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/lib/gcc/aarch64-buildroot-linux-gnu/6.5.0/include-fixed/limits.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/lib/gcc/aarch64-buildroot-linux-gnu/6.5.0/include-fixed/syslimits.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/limits.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/libc-header-start.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/features.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/sys/cdefs.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/wordsize.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/long-double.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/gnu/stubs.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/gnu/stubs-lp64.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/posix1_lim.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/local_lim.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/linux/limits.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/posix2_lim.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/lib/gcc/aarch64-buildroot-linux-gnu/6.5.0/include/float.h \
+ gsignal.h gclosure.h gtype.h glib.h galloca.h gtypes.h garray.h \
+ gasyncqueue.h gthread.h gerror.h gquark.h gbacktrace.h gcache.h glist.h \
+ gmem.h gcompletion.h gdataset.h gdate.h gfileutils.h ghash.h ghook.h \
+ giochannel.h gconvert.h gmain.h gslist.h gstring.h gunicode.h gmarkup.h \
+ gmessages.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/lib/gcc/aarch64-buildroot-linux-gnu/6.5.0/include/stdarg.h \
+ gnode.h gpattern.h gprimes.h gqsort.h gqueue.h grand.h grel.h gscanner.h \
+ gshell.h gstrfuncs.h gthreadpool.h gtimer.h gtree.h gutils.h gvalue.h \
+ gparam.h gmarshal.h gbsearcharray.h gvaluecollector.h glib-object.h \
+ gboxed.h genums.h gobject.h gparamspecs.h gsourceclosure.h gtypemodule.h \
+ gtypeplugin.h gvaluearray.h gvaluetypes.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/string.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/locale_t.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/__locale_t.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/strings.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/signal.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/timesize.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/typesizes.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/time64.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/signum.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/signum-generic.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/sig_atomic_t.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/sigset_t.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/__sigset_t.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/struct_timespec.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/siginfo_t.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/__sigval_t.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/siginfo-arch.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/siginfo-consts.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/sigval_t.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/sigevent_t.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/sigevent-consts.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/sigaction.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/sigcontext.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/asm/sigcontext.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/linux/types.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/asm/types.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/asm-generic/types.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/asm-generic/int-ll64.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/asm/bitsperlong.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/asm-generic/bitsperlong.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/linux/posix_types.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/linux/stddef.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/asm/posix_types.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/asm-generic/posix_types.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/stack_t.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/sys/ucontext.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/sys/procfs.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/sys/time.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/time_t.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/struct_timeval.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/sys/select.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/select.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/sys/types.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/clock_t.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/clockid_t.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/timer_t.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/stdint-intn.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/endian.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/endian.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/byteswap.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/uintn-identity.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/sys/sysmacros.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/sysmacros.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/pthreadtypes.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/thread-shared-types.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/pthreadtypes-arch.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/sys/user.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/procfs.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/procfs-id.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/procfs-prregset.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/procfs-extra.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/sigstack.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/ss_flags.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/struct_sigstack.h \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/sigthread.h \
+ gmarshal.c
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/stdc-predef.h:
+
+glibconfig.h:
+
+../mgdconfig.h:
+
+gmacros.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/lib/gcc/aarch64-buildroot-linux-gnu/6.5.0/include/stddef.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/lib/gcc/aarch64-buildroot-linux-gnu/6.5.0/include-fixed/limits.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/lib/gcc/aarch64-buildroot-linux-gnu/6.5.0/include-fixed/syslimits.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/limits.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/libc-header-start.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/features.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/sys/cdefs.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/wordsize.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/long-double.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/gnu/stubs.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/gnu/stubs-lp64.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/posix1_lim.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/local_lim.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/linux/limits.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/posix2_lim.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/lib/gcc/aarch64-buildroot-linux-gnu/6.5.0/include/float.h:
+
+gsignal.h:
+
+gclosure.h:
+
+gtype.h:
+
+glib.h:
+
+galloca.h:
+
+gtypes.h:
+
+garray.h:
+
+gasyncqueue.h:
+
+gthread.h:
+
+gerror.h:
+
+gquark.h:
+
+gbacktrace.h:
+
+gcache.h:
+
+glist.h:
+
+gmem.h:
+
+gcompletion.h:
+
+gdataset.h:
+
+gdate.h:
+
+gfileutils.h:
+
+ghash.h:
+
+ghook.h:
+
+giochannel.h:
+
+gconvert.h:
+
+gmain.h:
+
+gslist.h:
+
+gstring.h:
+
+gunicode.h:
+
+gmarkup.h:
+
+gmessages.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/lib/gcc/aarch64-buildroot-linux-gnu/6.5.0/include/stdarg.h:
+
+gnode.h:
+
+gpattern.h:
+
+gprimes.h:
+
+gqsort.h:
+
+gqueue.h:
+
+grand.h:
+
+grel.h:
+
+gscanner.h:
+
+gshell.h:
+
+gstrfuncs.h:
+
+gthreadpool.h:
+
+gtimer.h:
+
+gtree.h:
+
+gutils.h:
+
+gvalue.h:
+
+gparam.h:
+
+gmarshal.h:
+
+gbsearcharray.h:
+
+gvaluecollector.h:
+
+glib-object.h:
+
+gboxed.h:
+
+genums.h:
+
+gobject.h:
+
+gparamspecs.h:
+
+gsourceclosure.h:
+
+gtypemodule.h:
+
+gtypeplugin.h:
+
+gvaluearray.h:
+
+gvaluetypes.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/string.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/locale_t.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/__locale_t.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/strings.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/signal.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/timesize.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/typesizes.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/time64.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/signum.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/signum-generic.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/sig_atomic_t.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/sigset_t.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/__sigset_t.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/struct_timespec.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/siginfo_t.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/__sigval_t.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/siginfo-arch.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/siginfo-consts.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/sigval_t.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/sigevent_t.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/sigevent-consts.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/sigaction.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/sigcontext.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/asm/sigcontext.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/linux/types.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/asm/types.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/asm-generic/types.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/asm-generic/int-ll64.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/asm/bitsperlong.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/asm-generic/bitsperlong.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/linux/posix_types.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/linux/stddef.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/asm/posix_types.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/asm-generic/posix_types.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/stack_t.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/sys/ucontext.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/sys/procfs.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/sys/time.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/time_t.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/struct_timeval.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/sys/select.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/select.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/sys/types.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/clock_t.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/clockid_t.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/timer_t.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/stdint-intn.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/endian.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/endian.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/byteswap.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/uintn-identity.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/sys/sysmacros.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/sysmacros.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/pthreadtypes.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/thread-shared-types.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/pthreadtypes-arch.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/sys/user.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/procfs.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/procfs-id.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/procfs-prregset.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/procfs-extra.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/sigstack.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/ss_flags.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/types/struct_sigstack.h:
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/bits/sigthread.h:
+
+gmarshal.c:

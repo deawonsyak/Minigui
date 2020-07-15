@@ -1,0 +1,79 @@
+<!--
+--   This file is part of mGNCS, a component for MiniGUI.
+-- 
+--   Copyright (C) 2008~2018, Beijing FMSoft Technologies Co., Ltd.
+-- 
+--   This program is free software: you can redistribute it and/or modify
+--   it under the terms of the GNU General Public License as published by
+--   the Free Software Foundation, either version 3 of the License, or
+--   (at your option) any later version.
+-- 
+--   This program is distributed in the hope that it will be useful,
+--   but WITHOUT ANY WARRANTY; without even the implied warranty of
+--   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+--   GNU General Public License for more details.
+-- 
+--   You should have received a copy of the GNU General Public License
+--   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-- 
+--   Or,
+-- 
+--   As this program is a library, any link to this program must follow
+--   GNU General Public License version 3 (GPLv3). If you cannot accept
+--   GPLv3, you need to be licensed from FMSoft.
+-- 
+--   If you have got a commercial license of this program, please use it
+--   under the terms and conditions of the commercial license.
+-- 
+--   For more information about the commercial license, please refer to
+--   <http://www.minigui.com/blog/minigui-licensing-policy/>.
+  -->
+<window class="window::MainWnd" serial-number="4114546688">
+	<ID>0x80003</ID>
+	<X>0</X>
+	<Y>0</Y>
+	<Width>325</Width>
+	<Height>98</Height>
+	<Text>0x00026B9C</Text>
+	<Border>True</Border>
+	<Visible>False</Visible>
+	<HasCaption>True</HasCaption>
+	<SystemMenu>True</SystemMenu>
+	<BorderType>DlgFrame</BorderType>
+	<MinimizeBox>True</MinimizeBox>
+	<MaximizeBox>True</MaximizeBox>
+	<onCreate>onCreate</onCreate>
+	<onKeyDown>onKeyDown</onKeyDown>
+	<onChar>onChar</onChar>
+	<onSetFocus>onSetFocus</onSetFocus>
+	<window class="window::Static" serial-number="3748093952">
+		<ID>0x4000000f</ID>
+		<X>2</X>
+		<Y>3</Y>
+		<Width>73</Width>
+		<Height>27</Height>
+		<Text>0x0002718A</Text>
+		<Font>*-unifont-rrn*nn-*-16-UTF-8</Font>
+	</window>
+	<window class="window::IMWordSel" serial-number="2102675456">
+		<ID>0x40000013</ID>
+		<X>9</X>
+		<Y>39</Y>
+		<Width>302</Width>
+		<Height>22</Height>
+		<Text>0x0002B64B</Text>
+		<listen>
+			<sender>1073741844</sender>
+			<event>4050</event>
+			<prototype>imwords_on_imkeys_selchanged</prototype>
+		</listen>
+	</window>
+	<window class="window::IMWordSel" serial-number="1505738752">
+		<ID>0x40000014</ID>
+		<X>84</X>
+		<Y>6</Y>
+		<Width>228</Width>
+		<Height>22</Height>
+		<Text>0x000249AB</Text>
+	</window>
+</window>

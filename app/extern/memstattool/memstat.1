@@ -1,0 +1,82 @@
+.\"  This page Copyright (C) 1997 Joshua Yelon <jyelon@uiuc.edu>
+.\"  Distribution subject to the terms of the GPL.
+.\"  minor fixes by Bernd Eckenfels <ecki@debian.org> 1998-04-18
+.\"  minor fixes by Bernd Eckenfels <ecki@debian.org> 1998-11-01
+.\"  significant rewrite by Michael Meskes <meskes@debian.org> 2009-04-06
+.TH MEMSTAT 1 "01 November 1998 " "Debian" "Linux Programmer's Manual"
+.SH NAME
+memstat \- Identify what's using up virtual memory.
+.SH SYNOPSIS
+.ft B
+.B memstat
+.RB [ "\-n" ] [ "\-v" ] [ "\-w" ] [ "\-p PID" ]
+.br
+.SH DESCRIPTION
+\fBmemstat\fP lists all accessible processes, executables, and shared libraries
+that are using up virtual memory. To get a complete list \fBmemstat\fP has to
+be run as root to be able to access the data of all running processes.
+
+First, the processes are listed.  An amount of memory is shown along
+with a process ID and the name of the executable which the process is
+running.  The amount of memory shown does not include shared memory:
+it only includes memory which is private to that process.  So, if a
+process is using a shared library like libc, the memory used to hold
+that library is not included.  The memory used to hold the
+executable's text-segment is also not included, since that too is
+shareable.
+
+After the processes, the shared objects are listed.  The amount of
+memory is shown along with the filename of the shared object, followed by a
+list of the processes using the shared object. The memory is listed as the
+total amount of memory allocated to this object throughout the whole namespace.
+In brackets also the amount that is really shared is listed.
+
+Finally, a grand total is shown.  Note that this program shows the
+amount of \fBvirtual\fP (not real) memory used by the various items.
+
+\fBmemstat\fP gets its input from the /proc filesystem.  This must be
+compiled into your kernel and mounted for \fBmemstat\fP to work.  The
+pathnames shown next to the shared objects are also read from /proc filesystem
+if this information is available. If not, \fBmemstat\fP scans the disk to
+translate inode information to filesnames.  For this \fBmemstat\fP uses a
+configuration file, \fB/etc/memstat.conf\fP, to determine which directories to scan.
+This file should include all the major bin and lib directories in your system,
+as well as the /dev directory.  These directories are scanned recursively, so
+that files stored in subdirectories are seen by \fBmemstat\fP as well.  Note
+that this traversal of directory trees significantly increases run time.
+Executables or shared objects not found will be listed as ``[dev]:<inode>''.
+
+.SS Options
+The \fB-n\fP switch causes inode information to be printed as-is, if no file
+information was given and to not traverse the configured directory trees.
+.PP
+The \fB-v\fP switch prints version information and exits.
+.PP
+The \fB-w\fP switch causes a wide printout: lines are not truncated at
+80 columns.
+.PP
+The \fB-p\fP switch causes \fBmemstat\fP to only print data gathered from
+looking at the process with the given PID.
+.SH NOTES
+These reports are intended to help identify programs that are using an
+excessive amount of memory, and to reduce overall memory waste.
+.PP
+.SH FILES
+.ta
+.nf
+/etc/memstat.conf
+/proc/*/maps
+.fi
+
+.SH "SEE ALSO"
+ps(1), top(1), free(1), vmstat(8), lsof(8), /usr/share/doc/memstat/memstat-tutorial.txt.gz
+.PP
+.SH BUGS
+
+\fBmemstat\fP ignores all devices that just map main memory, though this may
+cause \fBmemstat\fP to ignore some memory usage.
+
+Memory used by the kernel itself is not listed.
+.SH AUTHOR
+Originally written by Joshua Yelon <jyelon@uiuc.edu> and patched by Bernd Eckenfels
+<ecki@debian.org>. Taken over and rewritten by Michael Meskes <meskes@debian.org>.

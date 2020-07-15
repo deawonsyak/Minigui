@@ -1,0 +1,4 @@
+proto.lo: proto.c \
+ /home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/stdc-predef.h
+
+/home/yangkai/mixpad_rk3326_linux/buildroot/output/rockchip_rk3326_64/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/stdc-predef.h:

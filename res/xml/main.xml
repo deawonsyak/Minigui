@@ -1,0 +1,92 @@
+
+<page name="main">
+
+<script>
+
+var bb 
+
+func next_onClick_handle(){
+	set_property("play","upImage","res/icon_play_normal2.png")
+	set_property("play","downImage","res/icon_play_press2.png")
+	send_service_event("play_start",bb)
+}
+
+var mainbg = "res/home_bg_1.png"
+
+</script>
+
+<card name="card1" rect="0,0,100,100">
+	<button name="card1_play" rect="20,20,60,60">
+		upImage="res/icon_play_normal2.png",
+		downImage="res/icon_play_press2.png",
+		<eventcbk event="onClick">
+			set_property("card1_play","upImage","res/icon_stop_normal2.png")
+			set_property("card1_play","downImage","res/icon_stop_press2.png")
+		</eventcbk>
+	</button>
+</card>
+
+<mode name="mode1">
+	<mnode widget="rect" rect="0,0,100,200">
+		<mnode widget="button" rect="0,0,50,100">
+		</mnode>
+	</mnode>
+</mode>
+
+
+<include file="include.xml"/>
+<include file="keyboard.xml"/>
+
+<xmlwidget name="mywidget1" rect="0,0,100,100">
+	<image name="image1" rect="60,0,40,40" image="res/icon_stop_press2.png"></image>
+	<eventDefine event="onTest"/>
+	<button name="play" rect="0,0,60,60">
+		upImage="res/icon_play_normal2.png",
+		downImage="res/icon_play_press2.png",
+		<eventcbk event="onClick">
+			set_property("play","upImage","res/icon_stop_normal2.png")
+			set_property("play","downImage","res/icon_stop_press2.png")
+			trigger_widget_event("onTest")
+			open_keyboard("keyboard")
+		</eventcbk>
+	</button>
+	<text name="w" rect="70,20,48,55" text="w" textSize="30" textAlign="center"> </text>
+</xmlwidget>
+
+<widgets name="screen" rect="0,0,480,480">
+	<image name="mainbk" rect="0,0,480,480">
+		image=mainbg
+		<box name="musicbox" rect="20,317,440,120">
+		<eventcbk event="onButtonDown">Print("musicbox onButtonDown")</eventcbk>
+		<rect name="musicrect" rect="0,0,440,120" color="0x252525" alpha="0x99" rounded="15,15" >
+			<button name="prev" rect="236,30,60,60">
+				upIimage="res/icon_on_normal.png",
+				downImage="res/icon_on_press.png",
+			</button>
+			<button name="play" rect="308,30,60,60">
+				upImage="res/icon_play_normal2.png",
+				downImage="res/icon_play_press2.png",
+				<eventcbk event="onClick">
+					set_property("play","upImage","res/icon_stop_normal2.png")
+					set_property("play","downImage","res/icon_stop_press2.png")
+				</eventcbk>
+			</button>
+			<button name="next" rect="380,30,60,60">
+				upImage="res/icon_under_normal.png",
+				downImage="res/icon_under_press.png",
+				<eventcbk event="onClick">next_onClick_handle()</eventcbk>
+			</button>
+		</rect>
+		</box>
+		<icard name="test" card="card1" rect="20,100,100,100"></icard>
+		<icard name="test1" card="card1" rect="200,100,100,100"></icard>
+		<mywidget name="my1" rect="20,200,100,100">
+			<eventcbk event="onTest0">Print("mywidget onTest0")</eventcbk>
+		</mywidget>
+		<mywidget1 name="my2" rect="120,200,100,100">
+			<eventcbk event="onTest">Print("mywidget1 onTest")</eventcbk>
+		</mywidget1>
+	</image>
+</widgets>
+
+</page>

@@ -1,0 +1,25 @@
+
+<page name="main">
+
+<script>
+func musicPlayerSwitch_onClick_handle(){
+	set_property("play","up_image","res/icon_play_normal2.png")
+	set_property("play","down_image","res/icon_play_press2.png")
+	send_event("music_player_switch",aa)
+}
+</script>
+
+<widgets name="musicAlbumScreen" rect="0,0,480,480">
+	<box name="musicAlbum" rect="50,50,380,380">
+		<img name="musicAlbumBmp" rect="50,50,380,380">
+			path="res/res_mixpad/01_home/home_weather_sunny.png"
+		</img>
+	</box>
+	<button name="musicPlayerSwitch" rect="425,425,32,32">
+		up_image="res/icon_under_normal.png",
+		down_image="res/icon_under_press.png",
+		<eventcbk event="onClick">musicPlayerSwitch_onClick_handle()</eventcbk>
+	</button>
+</widgets>
+
+</page>

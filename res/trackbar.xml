@@ -1,0 +1,10 @@
+<page name="main">
+
+<include file="keyboard.xml"/>
+
+<widgets name="screen" rect="0,0,480,480">
+	<trackbar name="input" rect="30,30,200,50" barImage="res/home_bg_1.png" trackImage="res/home_bg_1.png">
+	</trackbar>
+</widgets>
+
+</page>
